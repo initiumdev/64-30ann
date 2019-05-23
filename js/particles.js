@@ -223,7 +223,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
 
       $(window).on('detail-intro-2', function(){
         //animateParticle
-        pJS.fn.animate(pJS.particles.array[pJS.tmp.active_id], {propname: 'size', to: ((mode == 'l')? 800 : 400), duration: 2000, starttime: new Date().getTime(), eventname: 'detail-article-0' });
+        pJS.fn.animate(pJS.particles.array[pJS.tmp.active_id], {propname: 'size', to: ((mode == 'l')? 1000 : 400), duration: 2000, starttime: new Date().getTime(), eventname: 'detail-article-0' });
 
 
       }).on('detail-article', function(e){

@@ -1,4 +1,9 @@
 var istouch = $('#touch-detect').is(':visible');
+var story = {
+  frame: -1,
+  $section: null,
+  num: 0
+};
 var stage1Arr = {
     "mode": 'star',
     "particles": {
@@ -242,7 +247,7 @@ function stage2(){
   
 }
 
-var mode = 'l', scrollable = true;
+var mode = 'l', scrollable = true, scrollable1 = true;
 var pageHandler = {
   pages: ["intro", "landing", "landing2", "story"],
   cur_page: 0,
@@ -283,7 +288,7 @@ var pageHandler = {
       }
       $memoryWrap.append($m);
     }
-    // duration = 1000;
+    duration = 1000;
     $('#intro').addClass('active');
     setTimeout(function(){
       stage2();
@@ -294,27 +299,38 @@ var pageHandler = {
     mc.on("swipeup swipedown", function(ev) {
       // console.log(ev.type +" gesture detected.");
       if(ev.type == 'swipeup'){
-        // if($('body').hasClass('landing-state')){
-          // changePage($('#landing'), $('#landing2'));
-        // }
-        if(story.$section != null && scrollable){
-          $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
-        }
-        else if($('body').hasClass('landing-state')){
-          _.nextPage();
-        }
-        setTimeout(function(){
-          $("html, body").animate({ scrollTop: 0 }, 0);
-        }, 200);
+        _.nextHandler();
       }
+    });
+    $(window).bind('mousewheel', function(e) {
+        if (e.originalEvent.wheelDelta >= 0) {
+            // console.log('Scroll up');
+        }
+        else {
+          _.nextHandler();
+        }
     });
     $('#intro .next-btn').click(function(e){
       e.preventDefault();
       _.nextPage();
     });
   },
-  nextPage: function(){
+  nextHandler: function(){
     var _ = this;
+    if(story.$section != null && scrollable){
+      $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
+    }
+    else if($('body').hasClass('landing-state')){
+      _.nextPage();
+    }
+    setTimeout(function(){
+      $("html, body").animate({ scrollTop: 0 }, 0);
+    }, 200);
+  },
+  nextPage: function(){
+    if(!scrollable1) return;
+    var _ = this;
+    scrollable1 = false;
     if(_.cur_page >= _.pages.length){
       return;
     }
@@ -325,10 +341,9 @@ var pageHandler = {
     }
     _.changePage($('#'+_.pages[_.cur_page]), $('#'+to));
     _.cur_page++;
-    // if(_.pages[_.cur_page] == 'sound'){
-
-    // }
-    // changePage($('#intro'), $('#sound'));
+    setTimeout(function(){
+      scrollable1 = true;
+    }, 400);
   },
   changePage: function($from, $to){
     var _ = this;
@@ -352,11 +367,6 @@ $('body').on('detail-intro', function(e){
   console.log('trigger: '+pageHandler.cur_id);
   
 });
-var story = {
-  frame: -1,
-  $section: null,
-  num: 0
-};
 var nextFrame = function(){
   story.frame++;
   if(story.frame == 0){

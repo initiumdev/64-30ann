@@ -238,24 +238,6 @@ body{
   }
 }
 
-// #memory2{
-//   animation-delay: .15s;
-// }
-// #memory3{
-//   animation-delay: .3s;
-// }
-// #memory4{
-//   animation-delay: .45s;
-// }
-
-@keyframes scrolling {
-  0{opacity: 0; transform: translateY(0%) scale(0);}
-  10%   { opacity: 1; transform: translateY(2%) scale(1);}
-
-  
-  55% { transform: translateY(-99%)  scale(1); opacity: 1;}
-  65% { transform: translateY(-100%) scale(0); opacity: 0;}
-}
 .swipeup{
   height: 42px;
   width: 1px;
@@ -276,7 +258,6 @@ body{
     margin-left: -3px;
     // transform: translate(-50%, 0%);
     transform-origin: 50% 100% !important;
-    animation: scrolling 2s ease-in-out infinite forwards;
     &:after{
       position: absolute;
       bottom: -3px;
@@ -602,6 +583,18 @@ body{
       font-size: 20px;
     }
   }
+  @keyframes scroll {
+    0{transform: translateY(-100%) scale(0); opacity: 0;}
+    10%   { transform: translateY(-99%)  scale(1); opacity: 1;}
+    55% { opacity: 1; transform: translateY(2%) scale(1);}
+    65% { opacity: 0; transform: translateY(0%) scale(0);}
+  }
+  .swipeup{
+    span{
+      transform: translateY(-100%);
+      animation: scroll 2s ease-in-out infinite forwards;
+    }
+  }
   @keyframes flash-d {
     0%   { transform: translate(100vw, -50%); opacity: .8;}
     // 50%   { transform: translate(0%); }
@@ -724,6 +717,19 @@ body{
     0%   { transform: translateX(100vw); opacity: .8;}
     // 50%   { transform: translate(0%); }
     100% { transform: translateX(-2600px); opacity: .9;}
+  }
+  @keyframes drag {
+    0{opacity: 0; transform: translateY(0%) scale(0);}
+    10%   { opacity: 1; transform: translateY(2%) scale(1);}
+
+    
+    55% { transform: translateY(-99%)  scale(1); opacity: 1;}
+    65% { transform: translateY(-100%) scale(0); opacity: 0;}
+  }
+  .swipeup{
+    span{
+      animation: drag 2s ease-in-out infinite forwards;
+    }
   }
   #intro, #landing, .section{
     &:before{
