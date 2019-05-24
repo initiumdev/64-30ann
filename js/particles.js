@@ -226,6 +226,15 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         pJS.fn.animate(pJS.particles.array[pJS.tmp.active_id], {propname: 'size', to: ((mode == 'l')? 1000 : 400), duration: 2000, starttime: new Date().getTime(), eventname: 'detail-article-0' });
 
 
+      }).on('float-mode', function(e){
+        pJS.particles.move.enable = true;
+        pJS.fn.vendors.draw();
+      }).on('grid-mode', function(e){
+        pJS.particles.move.enable = false;
+        // for(var i = 0; i < pJS.particles.number.value; i++) {
+          // pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, i));
+          
+        // }
       }).on('detail-article', function(e){
         //switching bg
         if(e.frame == undefined || e.frame == 0){

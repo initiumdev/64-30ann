@@ -397,6 +397,18 @@ $('.detail-article .next-btn').bind('click', function(e){
   scrollable = false;
   nextFrame();
 });
+$('#grid-btn').bind('click', function(e){
+  e.preventDefault();
+  $(this).toggleClass('active');
+  if($(this).hasClass('active')){
+    //change to grid mode
+    $(window).trigger('grid-mode');
+  }
+  else{
+    //change to floating mode
+    $(window).trigger('float-mode');
+  }
+});
 $('.detail-article .video-btn').bind('click', function(e){
   e.preventDefault();
   var video = $(this).parent().find('video').get(0);

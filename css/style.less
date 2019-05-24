@@ -156,10 +156,23 @@ canvas{
     fill: #bfbfbf;
   }
 }
+#grid-btn{
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 12;
+  background: ~'url(../images/grid-icon.png) no-repeat 50% 50%/25px auto';
+  opacity: 0;
+}
 body{
   &.landing2-state{
     .page, .section{
       pointer-events: none;
+    }
+    #grid-btn{
+      opacity: 1;
     }
   }
 }
@@ -299,6 +312,7 @@ body{
   //   transform: translateY(0);
     // transition: transform 1s 1.4s ease;
     transition: transform 1.4s ease;
+    margin-bottom: 0;
   }
   .desc{
   //   font-size: 1.2em;
@@ -563,6 +577,17 @@ body.landing-state{
     width: 65px;
     right: 55px;
     top: 50px;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  #grid-btn{
+    width: 65px;
+    height: 65px;
+    left: 41px;
+    top: 50px;
+    opacity: .7;
+    background-size: 28px;
     &:hover{
       opacity: 1;
     }
