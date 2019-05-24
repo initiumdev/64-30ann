@@ -264,15 +264,18 @@ var pageHandler = {
     mc.on("swipeup swipedown", function(ev) {
       // console.log(ev.type +" gesture detected.");
       if(ev.type == 'swipeup'){
-        _.nextHandler();
+        _.prevNextHandler(true);
+      }
+      else{
+        _.prevNextHandler(false);
       }
     });
     $(window).bind('mousewheel', function(e) {
         if (e.originalEvent.wheelDelta >= 0) {
-          
+          _.prevNextHandler(false);
         }
         else {
-          _.nextHandler();
+          _.prevNextHandler(true);
         }
     });
     $('#intro .next-btn').click(function(e){
@@ -280,13 +283,18 @@ var pageHandler = {
       _.nextPage();
     });
   },
-  nextHandler: function(){
+  prevNextHandler: function(next){
     var _ = this;
     if(audioHandler.playing){
       $(window).trigger('audioPause');
     }
     if(story.$section != null && scrollable){
-      $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
+      if(next){
+        $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
+      }
+      else{
+        $('.detail-article.active .frame'+(story.frame+1)+' .prev-btn').trigger('click'); 
+      }
     }
     else if($('body').hasClass('landing-state')){
       $('#bg').addClass('hide');
@@ -336,18 +344,15 @@ $('body').on('detail-intro', function(e){
   console.log('trigger: '+pageHandler.cur_id);
   
 });
-var nextFrame = function(){
-  story.frame++;
-  if(story.frame == 0){
-    story.$section = $('#story'+(pageHandler.cur_id+1));
-    story.num = story.$section.find('.frame').length;
-    var $to = story.$section.find('.detail-article');
-    pageHandler.changePage(story.$section.find('.detail-intro'), $to, false);  
-  }
-  if(story.frame >= story.num) return;
-  
-  var $current = story.$section.find('.frame'+(story.frame));
+var prevFrame = function(){
+  story.frame--;
+  if(story.frame <0) return;
+  var $current = story.$section.find('.frame'+(story.frame+2));
   var $frame = story.$section.find('.frame'+(story.frame+1));
+  console.log('fram frame'+(story.frame+2)+' to frame'+(story.frame+1));
+  changeFrame($current, $frame, false);
+};
+var changeFrame = function($current, $frame, next){
   if($current.find('.video-wrapper').length == 1){
     $current.find('.video-wrapper').html('');  
   }
@@ -362,6 +367,7 @@ var nextFrame = function(){
   var event = jQuery.Event( "detail-article");
   event.frame = story.frame;
   event.template = t;
+  event.next = next;
   var time = 2100;
   if(t == 'e'){
     time = 4600;
@@ -379,6 +385,20 @@ var nextFrame = function(){
   else if(event.frame == 5){event.animate = [{propname: 'x', to: 'W/2', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H/2)', duration: 1300, starttime: new Date().getTime() }];}
   else{event.animate = [];}
   $(window).trigger(event);
+};
+var nextFrame = function(){
+  story.frame++;
+  if(story.frame == 0){
+    story.$section = $('#story'+(pageHandler.cur_id+1));
+    story.num = story.$section.find('.frame').length;
+    var $to = story.$section.find('.detail-article');
+    pageHandler.changePage(story.$section.find('.detail-intro'), $to, false);  
+  }
+  if(story.frame >= story.num) return;
+  
+  // var $current = story.$section.find('.frame'+(story.frame));
+  // var $frame = story.$section.find('.frame'+(story.frame+1));
+  changeFrame(story.$section.find('.frame'+(story.frame)), story.$section.find('.frame'+(story.frame+1)), true);
 };
 $('body').on('detail-article-0', function(e){
   //caught after the intro audio finished
@@ -398,6 +418,11 @@ $('.detail-article .home-btn, #home-btn').bind('click', function(e){
   pageHandler.cur_page = 1;
   pageHandler.cur_id = null;
   $(window).trigger('landing');
+});
+$('.detail-article .prev-btn').bind('click', function(e){
+  e.preventDefault();
+  scrollable = false;
+  prevFrame();
 });
 $('.detail-article .next-btn').bind('click', function(e){
   e.preventDefault();

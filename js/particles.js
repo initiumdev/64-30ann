@@ -256,7 +256,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         // pJS.particles.move.enable = false;
       }).on('detail-article', function(e){
         //switching bg
-        if(e.frame == undefined || e.frame == 0){
+        if(e.next && (e.frame == undefined || e.frame == 0)){
           var frame = 0;
           pJS.tmp.bg_active = 0;
           pJS.particles.opacity.anim.enable = true;
