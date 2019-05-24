@@ -282,6 +282,9 @@ var pageHandler = {
   },
   nextHandler: function(){
     var _ = this;
+    if(audioHandler.playing){
+      $(window).trigger('audioPause');
+    }
     if(story.$section != null && scrollable){
       $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
     }
@@ -384,6 +387,9 @@ $('body').on('detail-article-0', function(e){
 });
 $('.detail-article .home-btn, #home-btn').bind('click', function(e){
   e.preventDefault();
+  if(audioHandler.playing){
+    $(window).trigger('audioPause');
+  }
   pageHandler.changePage(story.$section, $('#landing2'), true);
   story.$section.find('.detail-article.active, .frame.active').removeClass('active');
   story.frame = -1;

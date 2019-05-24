@@ -309,6 +309,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         pJS.tmp.bg_active = 0;
         pJS.tmp.islanding = true;
         pJS.interactivity.events.onclick.enable = true;
+        if(!istouch) pJS.interactivity.events.onhover.enable = true;
         //reset particle
         for(var j = 0; j < pJS.particles.array.length; j++){
           var _p = pJS.particles.array[j];
@@ -2210,17 +2211,21 @@ var audioHandler = {
       //}
 
     audioHandler.playing = true;
-    var instance = createjs.Sound.play(id, {volume: .1});
+    var instance = createjs.Sound.play(id, {volume: 1});
     if (instance == null || instance.playState == createjs.Sound.PLAY_FAILED) {
       audioHandler.reset();
       return;
     }
 
     instance.addEventListener("complete", function (instance) {
+      console.log('complete');
       audioHandler.reset();
       if(effect){
         $(window).trigger("detail-intro-2");
       }
+    });
+    $(window).on('audioPause', function(){
+      instance.stop();
     });
     if(effect){
       audioHandler.tickTimer = setInterval(audioHandler.tick, 20);
