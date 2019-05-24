@@ -207,7 +207,7 @@
       <div class="frame frame17 center end" data-template="h">
         <div class="content">
           <p>你剛剛走完這位母親30年以來的道路，想走進其他親歷者的記憶隧道</p>
-          <a href="#" class="home-btn">返回光點主頁</a>
+          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
         </div>
         <!-- <div class="swipeup"><span></span></div> -->
       </div>
