@@ -305,13 +305,13 @@ var pageHandler = {
       to = to + (_.cur_id+1);
       $('#'+to+' .detail-intro').show().addClass('active'); 
     }
-    _.changePage($('#'+_.pages[_.cur_page]), $('#'+to));
+    _.changePage($('#'+_.pages[_.cur_page]), $('#'+to), true);
     _.cur_page++;
     setTimeout(function(){
       scrollable1 = true;
     }, 400);
   },
-  changePage: function($from, $to){
+  changePage: function($from, $to, ispage){
     var _ = this;
     if(story.$section != null){
       story.$section.removeClass('in');
@@ -320,7 +320,7 @@ var pageHandler = {
     $to.fadeIn(400, function(){
       $from.removeClass('active');
       $to.addClass('active');
-      $('body').attr('class', $to.attr('id')+'-state');
+      if(ispage) $('body').attr('class', _.pages[_.cur_page]+'-state');
       if(story.$section!=null){story.$section.addClass('in');}
     });
   }
@@ -339,7 +339,7 @@ var nextFrame = function(){
     story.$section = $('#story'+(pageHandler.cur_id+1));
     story.num = story.$section.find('.frame').length;
     var $to = story.$section.find('.detail-article');
-    pageHandler.changePage(story.$section.find('.detail-intro'), $to);  
+    pageHandler.changePage(story.$section.find('.detail-intro'), $to, false);  
   }
   if(story.frame >= story.num) return;
   
@@ -354,7 +354,7 @@ var nextFrame = function(){
     $wrap.html('<video width="400" ><source src="'+src+'" type="video/mp4">Your browser does not support HTML5 video.</video>');
     $frame.find('.video-btn').trigger('click');
   }
-  pageHandler.changePage($current, $frame);
+  pageHandler.changePage($current, $frame, false);
   var t = $frame.data('template');
   var event = jQuery.Event( "detail-article");
   event.frame = story.frame;
@@ -379,11 +379,12 @@ var nextFrame = function(){
 };
 $('body').on('detail-article-0', function(e){
   //caught after the intro audio finished
+  $('body').attr('class', 'timeline-state');
   nextFrame();
 });
-$('.detail-article .home-btn').bind('click', function(e){
+$('.detail-article .home-btn, #home-btn').bind('click', function(e){
   e.preventDefault();
-  pageHandler.changePage(story.$section, $('#landing2'));
+  pageHandler.changePage(story.$section, $('#landing2'), true);
   story.$section.find('.detail-article.active, .frame.active').removeClass('active');
   story.frame = -1;
   story.num = 0;

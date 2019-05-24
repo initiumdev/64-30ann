@@ -156,23 +156,40 @@ canvas{
     fill: #bfbfbf;
   }
 }
-#grid-btn{
+#grid-btn, #home-btn{
   position: absolute;
+  opacity: 0;
+  z-index: 12;
+  pointer-events: none;
+}
+#grid-btn{
   left: 16px;
   top: 20px;
   width: 50px;
   height: 50px;
-  z-index: 12;
   background: ~'url(../images/grid-icon.png) no-repeat 50% 50%/25px auto';
-  opacity: 0;
+}
+#home-btn{
+  left: 16px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background: ~'url(../images/back-icon.png) no-repeat 50% 50%/auto 24px';
 }
 body{
+  &.timeline-state{
+    #home-btn{
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
   &.landing2-state{
     .page, .section{
       pointer-events: none;
     }
     #grid-btn{
       opacity: 1;
+      pointer-events: auto;
     }
   }
 }
@@ -577,19 +594,18 @@ body.landing-state{
     width: 65px;
     right: 55px;
     top: 50px;
-    &:hover{
-      opacity: 1;
-    }
   }
   #grid-btn{
     width: 65px;
     height: 65px;
     left: 41px;
     top: 50px;
-    background-size: 28px;
-    &:hover{
-      opacity: 1;
-    }
+    background-size: 28px auto;
+  }
+  #home-btn{
+    left: 36px;
+    top: 50px;
+    background-size: auto 34px;
   }
   body{
     &.landing2-state{
@@ -597,6 +613,17 @@ body.landing-state{
         opacity: .7;
       }
     }
+    &.timeline-state{
+      #home-btn{
+        opacity: .7;
+      }
+    }
+  }
+  #logo, #grid-btn, #home-btn{
+    &:hover{
+      opacity: 1 !important;
+    }
+    
   }
   p{
     font-size: 18px;
