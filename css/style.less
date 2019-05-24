@@ -192,6 +192,12 @@ body{
       pointer-events: auto;
     }
   }
+  &.intro-state{
+    #credits-btn{
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 .page, .section, #bg, #bg2, .subpage{
   position: absolute;
@@ -386,6 +392,22 @@ body.landing-state{
 //     transition-delay: 1.2s;
 //   }
 // }
+#credits-btn{
+  position: absolute;
+  opacity: 1;
+  z-index: 12;
+  font-size: .9em;
+}
+#credits{
+  z-index: 12;
+  background: rgba(25, 25, 25, .7);
+  .content{
+    position: relative;
+    top: 50%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+}
 #tips{
   position: absolute;
   .icon{
@@ -616,6 +638,9 @@ body.landing-state{
     top: 50px;
     background-size: auto 34px;
   }
+  #credits-btn{
+    opacity: .7;
+  }
   body{
     &.landing2-state{
       #grid-btn{
@@ -638,7 +663,7 @@ body.landing-state{
     font-size: 18px;
     line-height: 1.7em;
   }
-  .page, .frame{
+  .page, .frame, #credits{
     .content{
       padding: 0 60px;
     }
@@ -729,6 +754,11 @@ body.landing-state{
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #credits-btn{
+    bottom: 10%;
+    right: 10%;
+    // transform: translateX(-50%);
   }
   #story1{
     .frame2{
@@ -847,6 +877,10 @@ body.landing-state{
   #tips{
     bottom: 30px;
     left: 30px;
+  }
+  #credits-btn{
+    bottom: 30px;
+    right: 30px; 
   }
   #story1{
     .frame2{

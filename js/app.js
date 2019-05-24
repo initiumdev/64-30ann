@@ -429,6 +429,9 @@ $('.detail-article .next-btn').bind('click', function(e){
   scrollable = false;
   nextFrame();
 });
+$('#credits-btn').bind('click', function(e){
+  $('#credits').fadeIn(400).toggleClass('active');
+});
 $('#grid-btn').bind('click', function(e){
   e.preventDefault();
   $(this).toggleClass('active');
