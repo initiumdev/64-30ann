@@ -149,7 +149,7 @@ canvas{
   position: absolute;
   right: 25px;
   top: 23px;
-  width: 62px;
+  width: 50px;
   z-index: 12;
   opacity: .7;
   svg{
@@ -270,7 +270,7 @@ body{
     }
   }
 }
-#intro, #landing{
+#intro{
   &:before{
     position: absolute;
     top: 0;
@@ -282,23 +282,32 @@ body{
     opacity: 0;
   }
 }
+#site-logo{
+  img{
+    width: 239px;
+    margin: 0 auto;
+  }
+}
 #intro{
   display: block;
   &:before{
     opacity: 0;
-    transition-duration: 5s;
+    transition-duration: 2.5s;
   }
   h1{
-    margin-bottom: .4em;
-    transform: translateY(0);
-    transition: transform 1s 1.4s ease;
+  //   margin-bottom: .4em;
+  //   transform: translateY(0);
+    // transition: transform 1s 1.4s ease;
+    transition: transform 1.4s ease;
   }
-  p{
-    font-size: 1.2em;
-    letter-spacing: .02em;
+  .desc{
+  //   font-size: 1.2em;
+  //   letter-spacing: .02em;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 1s 1.4s ease, transform 1s 1.4s ease;
+    max-height: 0;
+    transition: all 1.8s ease-in-out;
+  //   transform: translateY(10px);
+  //   transition: opacity 1s 1.4s ease, transform 1s 1.4s ease;
   }
   .content{
     // transition: opacity .4s 1.2s ease;
@@ -306,15 +315,29 @@ body{
 
   }
   &.active{
+    .swipeup{
+      opacity: 0;
+    }
+    // p{
+    //   opacity: 1;
+    //   transform: translateY(-20px);
+    // }
+  }
+}
+body.landing-state{
+  #intro{
     &:before{
-      // opacity: .5;
+      opacity: 1;
     }
     h1{
-      transform: translateY(-20px);
+      transform: scale(.8);
     }
-    p{
+    .desc{
       opacity: 1;
-      transform: translateY(-20px);
+      max-height: 500px;
+    }
+    .swipeup{
+      opacity: 1;
     }
   }
 }
@@ -324,14 +347,14 @@ body{
     margin-bottom: .5em;
   }
 }
-#landing{
-  &.active:before{
-    opacity: .8;
-  }
-  .content{
-    transition-delay: 1.2s;
-  }
-}
+// #landing{
+//   &.active:before{
+//     opacity: .8;
+//   }
+//   .content{
+//     transition-delay: 1.2s;
+//   }
+// }
 #tips{
   position: absolute;
   .icon{
@@ -537,7 +560,7 @@ body{
     background-size: 84px auto;
   }
   #logo{
-    width: 72px;
+    width: 65px;
     right: 55px;
     top: 50px;
     &:hover{
@@ -617,12 +640,17 @@ body{
   body.intro-state{
     #bg{
       // animation: flash 4.5s 2s linear infinite forwards;
-      animation: flash-d 13s 2s linear forwards;
+      animation: flash-d 13s 1.2s linear forwards;
     }
   }
   h1{
     font-size: 56px;
     margin-bottom: 7px;
+  }
+  #site-logo{
+    img{
+      width: 308px;
+    }
   }
   #intro{
     p{
@@ -733,7 +761,7 @@ body{
   }
   #intro, #landing, .section{
     &:before{
-      background: ~'url(../images/fade2.png) repeat 0 0/cover';
+      background: ~'url(../images/fade2.png?b) repeat 0 0/cover';
       // background: ~'url(../images/fade-pat.png) repeat 0 0/250px auto';
     }
   }

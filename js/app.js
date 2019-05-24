@@ -14,18 +14,8 @@ var stage1Arr = {
           "value_area": 100
         }
       },
-      "color": {
-        "value": ["#893d33"]
-      },
       "shape": {
         "type": "image",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
         "image": {
           "src": [base_url+"images/blur3.png"],
           "width": 912,
@@ -51,13 +41,6 @@ var stage1Arr = {
           "size_min": 40,
           "sync": false
         }
-      },
-      "line_linked": {
-        "enable": false,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
       },
       "move": {
         "enable": true,
@@ -126,18 +109,8 @@ function stage2(){
               "value_area": 100
             }
           },
-          "color": {
-            "value": ["#893d33", '#a44532', '#a35d33', '#c1914c', '#60684e', '#4e512a', '#638478', '#607d90', '#38455f', '#3d3c5b']
-          },
           "shape": {
             "type": "image",
-            "stroke": {
-              "width": 0,
-              "color": "#000000"
-            },
-            "polygon": {
-              "nb_sides": 5
-            },
             "image": {
               "src": [base_url+"images/1.png?c", base_url+"images/2.png?d", base_url+"images/3.png?c", base_url+"images/4.png?c", base_url+"images/5.png?c", base_url+"images/6.png?c", base_url+"images/7.png?c", base_url+"images/8.png?c", base_url+"images/9.png?c"],
               "active_src": [base_url+"images/1-active.png?c", base_url+"images/2-active.png?c", base_url+"images/3-active.png?c", base_url+"images/4-active.png?c", base_url+"images/5-active.png?c", base_url+"images/6-active.png?c", base_url+"images/7-active.png?c", base_url+"images/8-active.png?c", base_url+"images/9-active.png?c"],
@@ -164,13 +137,6 @@ function stage2(){
               "size_min": 200,
               "sync": false
             }
-          },
-          "line_linked": {
-            "enable": false,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
           },
           "move": {
             "enable": true,
@@ -219,43 +185,44 @@ function stage2(){
             "custom":{
               "size": 600,
               "opacity": .8
-            },
-            "repulse": {
-              "distance": 200
-            },
-            "push": {
-              "particles_nb": 4
-            },
-            "remove": {
-              "particles_nb": 2
             }
           }
         },
         "retina_detect": true,
         
       };
-  $('#particles-js canvas').addClass('hide');
+  $('body').addClass('landing-state');
+  setTimeout(function(){
+
+    $('#particles-js canvas').addClass('hide');
+  }, 400);
+  // return;
   setTimeout(function(){
     updateParticlesJS(stage2Arr);
     $('#particles-js canvas').removeClass('hide');
     setTimeout(function(){
-
       $('#bg').addClass('hide');
-      pageHandler.nextPage();
-    }, 2500);
-  }, 410);
+      // pageHandler.nextPage();
+    }, 3000);
+  }, 1210);
   
 }
 
 var mode = 'l', scrollable = true, scrollable1 = true;
 var pageHandler = {
-  pages: ["intro", "landing", "landing2", "story"],
+  pages: ["intro", "landing2", "story"], //["intro", "landing", "landing2", "story"]
   cur_page: 0,
   cur_id: null,
   init: function(){
     var _ = this;
     particlesJS('particles-js', stage1Arr);
     var $canvas = $('#particles-js canvas');
+    var multiply = .6, duration = 10000;
+    if($(window).width()<$(window).height()){
+      multiply = 0.5;
+      duration = 7500;
+      mode = 'p';
+    }
     var $memoryWrap = $('#bg'), 
       memoryData = [
       {src: base_url+"images/intro-img1-2.jpg", width: 807, ratio: 1, top: 59, left: 6.63}, 
@@ -263,21 +230,19 @@ var pageHandler = {
       {src: base_url+"images/intro-img3.jpg", width: 670, ratio: 1, top: 898, left: 38.3}, 
       {src: base_url+"images/2.png", width: 435, ratio: 1, top: 909, left: 55.73, opacity: .7}, 
       {src: base_url+"images/5.png", width: 480, ratio:1, top: 589, left: 19.93, opacity: .4},
-      {src: base_url+"images/intro-img4.png", width: 579, ratio: 1, top: 519, left: 21.93},
-
-
-      {src: base_url+"images/intro-img5.jpg", width: 880, ratio: 1, top: -100, left: 50.4, opacity: .4}, 
-      {src: base_url+"images/intro-img7.jpg", width: 760, ratio: 1, top: 835, left: 73.93, opacity: .6}, 
-      {src: base_url+"images/intro-img8.png", width: 670, ratio: 1, top: 507, left: 85.1}, 
+      {src: base_url+"images/intro-img4.png", width: 579, ratio: 1, top: 519, left: 21.93}];
+    if(mode == 'l'){
+      memoryData.push({src: base_url+"images/intro-img5.jpg", width: 880, ratio: 1, top: -100, left: 50.4, opacity: .4}, 
       {src: base_url+"images/intro-img6.png", width: 670, ratio: 1, top: 442, left: 66.2}, 
       {src: base_url+"images/9.png", width: 620, ratio:1, top: 247, left: 64.26, opacity: .4},
-      {src: base_url+"images/4.png", width: 600, ratio: 1, top: 974, left: 88.2, opacity: .4}];
-    var multiply = .6, duration = 10000;
-    if($(window).width()<$(window).height()){
-      multiply = 0.5;
-      duration = 7500;
-      mode = 'p';
+      {src: base_url+"images/4.png", width: 600, ratio: 1, top: 974, left: 88.2, opacity: .4}
+      );
+      // {src: base_url+"images/intro-img7.jpg", width: 760, ratio: 1, top: 835, left: 73.93, opacity: .6}, 
+      // {src: base_url+"images/intro-img8.png", width: 670, ratio: 1, top: 507, left: 85.1}, 
     }
+
+      // ];
+    
     for(var m = 0; m<memoryData.length; m++){
       var $m = $('<div id="memory'+(m+1)+'" class="memory" />'), memory = memoryData[m];
       var w  = memory.width, h = w * memory.ratio;
@@ -288,7 +253,7 @@ var pageHandler = {
       }
       $memoryWrap.append($m);
     }
-    duration = 1000;
+    duration = 4000;
     $('#intro').addClass('active');
     setTimeout(function(){
       stage2();
@@ -304,7 +269,7 @@ var pageHandler = {
     });
     $(window).bind('mousewheel', function(e) {
         if (e.originalEvent.wheelDelta >= 0) {
-            // console.log('Scroll up');
+          
         }
         else {
           _.nextHandler();
@@ -321,6 +286,7 @@ var pageHandler = {
       $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
     }
     else if($('body').hasClass('landing-state')){
+      $('#bg').addClass('hide');
       _.nextPage();
     }
     setTimeout(function(){

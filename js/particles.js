@@ -87,7 +87,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         }
       },
       line_linked: {
-        enable: true,
+        enable: false,
         distance: 100,
         color: '#fff',
         opacity: 1,
@@ -1887,7 +1887,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
     pJS.particles.line_linked.color_rgb_line = hexToRgb(pJS.particles.line_linked.color);
     if(pJS.mode == 'floating'){
       for(var i = 0; i<pJS.particles.array.length; i++){
-        pJS.fn.animate(pJS.particles.array[i], {propname: 'x', to: 'X-(W*1.6)', easing: "easeOutCubic", duration: 2500, starttime: new Date().getTime()+60*i});
+        pJS.fn.animate(pJS.particles.array[i], {propname: 'x', to: 'X-(W*1.6)', easing: "easeOutCubic", duration: ((mode == 'l')? 4000:3000), starttime: new Date().getTime()+60*i});
       }
       audioHandler.init();
     }

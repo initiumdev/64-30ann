@@ -39,24 +39,27 @@
 <div id="particles-js"></div>
 <div id="intro" class="page center">
   <div class="content">
-    <h1>六四・三十年</h1>
-    <p>
-      走進他們的記憶隧道
-    </p>
+    <h1 id="site-logo"><img src="<?php echo $base_url;?>images/6430-logo.svg" alt="六四・三十年 | 走進他們的記憶隧道" /></h1>
+    <div class="desc">
+      <p>1989年，他們懷抱希望，與廣場連結。30年一眨眼，物是人非。他們有的身體抱恙，有的永別人世，有的背著記憶匍匐前進，也有人日漸淡忘，開始懷疑堅守的意義。</p>
+      <p>端傳媒走訪世界多地，尋訪9名親歷者，重拾微小且重要的歷史碎片。個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，我們以聲音、影像，留住一片記憶的虛擬場所。</p>
+    </div>
+    <!-- <h1>六四・三十年</h1>
+    <p>走進他們的記憶隧道</p> -->
   </div>
-
+  <div class="swipeup"><span></span></div>
 </div>
-<div id="landing" class="page center">
+<!-- <div id="landing" class="page center">
   <div class="content">
-    <p>在中國內地，威權統治禁錮言論自由和知識傳遞，將八九民運在所有輿論空間中徹底抹去，年輕一代對六四的認識一片空白，而在香港和台灣等華人地區，悼念六四的氣氛近年也愈發冷淡。</p>
-    <p>今天，有誰還清晰地記得六四？他們還記得什麼？又還能記住多久？時間的巨輪滾動不停，在鮮活的記憶消逝之前，端傳媒重訪當年的親歷者，整理散落各處的記憶碎片，讓大家一同走進他們的記憶隧道。</p>
+    <p>1989年，他們懷抱希望，與廣場連結。30年一眨眼，物是人非。他們有的身體抱恙，有的永別人世，有的背著記憶匍匐前進，也有人日漸淡忘，開始懷疑堅守的意義。</p>
+    <p>端傳媒走訪世界多地，尋訪9名親歷者，重拾微小且重要的歷史碎片。個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，我們以聲音、影像，留住一片記憶的虛擬場所。</p>
   </div>
   <div id="sound" class="page center">
       <img src="<?php echo $base_url;?>images/sound.png"/>
       <p>本頁面以被遺忘的聲音作為探索故事、喚回記憶的媒介，請打開喇叭或戴上耳機，聽聽他們的故事</p>
   </div>
   <div class="swipeup"><span></span></div>
-</div>
+</div> -->
 <div id="landing2" class="page">
   <div id="tips"><span class='icon'></span>點擊光點進入故事</div>
 </div>
