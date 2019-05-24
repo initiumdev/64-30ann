@@ -285,10 +285,10 @@ var pageHandler = {
   },
   prevNextHandler: function(next){
     var _ = this;
-    if(audioHandler.playing){
-      $(window).trigger('audioPause');
-    }
     if(story.$section != null && scrollable){
+      if(audioHandler.playing && story.frame>0){
+        $(window).trigger('audioPause');
+      }
       if(next){
         $('.detail-article.active .frame'+(story.frame+1)+' .next-btn').trigger('click');
       }
