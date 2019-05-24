@@ -18,7 +18,7 @@
     } elseif(strpos($_SERVER['HTTP_HOST'], '192.168.') !== FALSE) {
         $base_url = 'http://'.$_SERVER['HTTP_HOST'].'/64-30/';
     } else {
-        $base_url = 'http://'.$_SERVER['HTTP_HOST'].'/64-30/';
+        $base_url = 'http://'.$_SERVER['HTTP_HOST'].'/64-30ann/';
     }?>
     var base_url = '<?php echo $base_url;?>';
   </script>
