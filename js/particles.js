@@ -184,6 +184,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
   pJS.tmp.img_active_obj.length = pJS.tmp.img_active_loaded =pJS.particles.shape.image.src.length;
   pJS.tmp.bg_active = 0;
   pJS.tmp.islanding = true;
+  pJS.tmp.exitingPosition = [];
   pJS.fn.retinaInit = function(){
 
     if(pJS.retina_detect && window.devicePixelRatio > 1){
@@ -228,13 +229,30 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
 
       }).on('float-mode', function(e){
         pJS.particles.move.enable = true;
+        
         pJS.fn.vendors.draw();
+        for(var i = 0; i < pJS.particles.number.value; i++) {
+          var _p = pJS.particles.array[i];
+          pJS.fn.animate(_p, {propname: 'size', to: pJS.tmp.exitingPosition[i].r, duration: 1000, starttime: new Date().getTime()});
+          pJS.fn.animate(_p, {propname: 'x', to: pJS.tmp.exitingPosition[i].x, duration: 1000, starttime: new Date().getTime()});
+          pJS.fn.animate(_p, {propname: 'y', to: pJS.tmp.exitingPosition[i].y, duration: 1100, starttime: new Date().getTime(),eventname: 'playBubble'});
+        }
       }).on('grid-mode', function(e){
+        var x = ['W*.18', 'W*0.51', 'W*0.84'];
+        var y = ['H*.18', 'H*0.51', 'H*0.84'];
+        pJS.particles.size.anim.enable = false;
+        for(var i = 0; i < pJS.particles.number.value; i++) {
+          var _p = pJS.particles.array[i];
+          pJS.tmp.exitingPosition.push({x: _p.x, y: _p.y, r: _p.radius});
+          pJS.fn.animate(_p, {propname: 'size',from: 60, to: ((pJS.canvas.w > pJS.canvas.h)?'H*.15':'W*.15'), duration: 1000, starttime: new Date().getTime() });
+          pJS.fn.animate(_p, {propname: 'x', to: x[(i%3)], duration: 1000, starttime: new Date().getTime()});
+          pJS.fn.animate(_p, {propname: 'y', to: y[Math.floor(i/3)], duration: 1100, starttime: new Date().getTime(), eventname: 'pauseBubble' });
+        }
+      }).on('pauseBubble', function(e){
+
         pJS.particles.move.enable = false;
-        // for(var i = 0; i < pJS.particles.number.value; i++) {
-          // pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, i));
-          
-        // }
+      }).on('playBubble', function(e){
+        pJS.particles.size.anim.enable = true;
       }).on('detail-article', function(e){
         //switching bg
         if(e.frame == undefined || e.frame == 0){
