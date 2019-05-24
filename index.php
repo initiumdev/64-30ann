@@ -7,7 +7,6 @@
   <meta name="author" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css?p">
-  <script src="<?php echo $base_url;?>js/modernizr.min.js?a"></script>
   <script type="text/javascript">
     <?php $base_url = '';
 
@@ -22,6 +21,7 @@
     }?>
     var base_url = '<?php echo $base_url;?>';
   </script>
+  <script src="<?php echo $base_url;?>js/modernizr.min.js?a"></script>
   <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
 </head>
 <body class="intro-state">
