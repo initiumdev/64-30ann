@@ -388,7 +388,7 @@ $('.detail-article .home-btn').bind('click', function(e){
   story.frame = -1;
   story.num = 0;
   story.$section = null;
-  pageHandler.cur_page = 2;
+  pageHandler.cur_page = 1;
   pageHandler.cur_id = null;
   $(window).trigger('landing');
 });

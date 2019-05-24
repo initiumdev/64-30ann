@@ -228,14 +228,16 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
 
 
       }).on('float-mode', function(e){
-        pJS.particles.move.enable = true;
+        // pJS.particles.move.enable = true;
         
-        pJS.fn.vendors.draw();
+        // pJS.fn.vendors.draw();
+        pJS.particles.size.anim.enable = true;
         for(var i = 0; i < pJS.particles.number.value; i++) {
           var _p = pJS.particles.array[i];
+          _p.active = false;
           pJS.fn.animate(_p, {propname: 'size', to: pJS.tmp.exitingPosition[i].r, duration: 1000, starttime: new Date().getTime()});
           pJS.fn.animate(_p, {propname: 'x', to: pJS.tmp.exitingPosition[i].x, duration: 1000, starttime: new Date().getTime()});
-          pJS.fn.animate(_p, {propname: 'y', to: pJS.tmp.exitingPosition[i].y, duration: 1100, starttime: new Date().getTime(),eventname: 'playBubble'});
+          pJS.fn.animate(_p, {propname: 'y', to: pJS.tmp.exitingPosition[i].y, duration: 1000, starttime: new Date().getTime()});
         }
       }).on('grid-mode', function(e){
         var x = ['W*.18', 'W*0.51', 'W*0.84'];
@@ -243,6 +245,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         pJS.particles.size.anim.enable = false;
         for(var i = 0; i < pJS.particles.number.value; i++) {
           var _p = pJS.particles.array[i];
+          _p.active = true;
           pJS.tmp.exitingPosition.push({x: _p.x, y: _p.y, r: _p.radius});
           pJS.fn.animate(_p, {propname: 'size',from: 60, to: ((pJS.canvas.w > pJS.canvas.h)?'H*.15':'W*.15'), duration: 1000, starttime: new Date().getTime() });
           pJS.fn.animate(_p, {propname: 'x', to: x[(i%3)], duration: 1000, starttime: new Date().getTime()});
@@ -250,9 +253,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         }
       }).on('pauseBubble', function(e){
 
-        pJS.particles.move.enable = false;
-      }).on('playBubble', function(e){
-        pJS.particles.size.anim.enable = true;
+        // pJS.particles.move.enable = false;
       }).on('detail-article', function(e){
         //switching bg
         if(e.frame == undefined || e.frame == 0){
@@ -1178,7 +1179,6 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
   /* ---------- pJS functions - modes events ------------ */
 
   pJS.fn.modes.customClickParticle = function(p){
-
     if(pJS.tmp.custom_clicking){
       
       var time_spent = (new Date().getTime() - pJS.interactivity.mouse.click_time)/1000;
