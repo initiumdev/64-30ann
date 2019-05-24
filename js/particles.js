@@ -694,11 +694,10 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
         pJS.canvas.ctx.globalAlpha = 1;
         pJS.canvas.ctx.globalCompositeOperation = 'screen';
 
-
         pJS.canvas.ctx.drawImage(
           p.img.src,
           pJS.canvas.w*.5 - c.radius,
-          pJS.canvas.h*.5 - c.radius,
+          pJS.canvas.h*.5 - c.radius - 100,
           c.radius*2,
           c.radius*2 / p.img.ratio
         );
@@ -1201,11 +1200,11 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
     scrollable = false;
     // console.log("start!!!: "+p.radius+', '+pJS.interactivity.modes.custom.size);
     
-    // pJS.fn.animate(p,{propname: 'size', from: p.radius, to: pJS.interactivity.modes.custom.size, duration: 1300, starttime: new Date().getTime()+100, easing: "easeInOutQuad" });
-    pJS.fn.animate(p,{propname: 'size', from: p.radius, to: 0, duration: 500, starttime: new Date().getTime()+100, easing: "easeInQuad" });
+    pJS.fn.animate(p,{propname: 'size', from: p.radius, to: 0, duration: 500, starttime: new Date().getTime(), easing: "easeInQuad" });
     pJS.fn.animate(p,{propname: 'x', from: p.x, to: pJS.canvas.w *.5, duration: 500, starttime: new Date().getTime(), easing: "easeInQuad" });
     pJS.fn.animate(p,{propname: 'y', from: p.y, to: pJS.canvas.h *.5, duration: 500, starttime: new Date().getTime(), easing: "easeInQuad" });
     pJS.fn.animate(p, {propname: 'opacity', from: clamp((p.opacity_bubble || p.opacity), 0, 1), to: .4, duration: 1300, starttime: new Date().getTime() });    
+    pJS.particles.size.anim.enable = false;
     for(var j = 0; j < pJS.particles.array.length; j++){
       var _p = pJS.particles.array[j];
       if(pJS.tmp.active_id != _p.id){
@@ -1218,7 +1217,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
     if(pJS.interactivity.events.onhover.enable) pJS.interactivity.events.onhover.enable = false;
     var event = jQuery.Event( "detail-intro" );
     event.bubble = p.id;
-    $( "body" ).trigger( event ).removeClass('intro-state');
+    $( "body" ).trigger( event).removeClass('intro-state');
     if(mode == 'l'){
       pJS.fn.createBgs(media_d[p.id]);
     }
