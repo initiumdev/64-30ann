@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,24 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css?p">
   <script type="text/javascript">
-    <?php $base_url = '';
-
-    if($_SERVER['HTTP_HOST'] == 'localhost') {
-        $base_url = './';
-        $js_base_url = 'http://localhost/64-30/';
-      } elseif(strpos($_SERVER['HTTP_HOST'], '192.168.') !== FALSE) {
-        $base_url = 'http://'.$_SERVER['HTTP_HOST'].'/64-30/';
-        $js_base_url = $base_url;
-    } elseif(strpos($_SERVER['HTTP_HOST'], 'dev') !== FALSE) {
-        $base_url = 'https://'.$_SERVER['HTTP_HOST'].'/64-30ann/';
-        $js_base_url = $base_url;
-    } else {
-        $base_url = 'https://theinitium.com/project/20190529-project-6430/';
-        $js_base_url = $base_url;
-    }?>
-    var base_url = '<?php echo $js_base_url;?>';
+        var base_url = 'https://theinitium.com/project/20190529-project-6430/';
   </script>
-  <script src="<?php echo $base_url;?>js/modernizr.min.js?a"></script>
+  <script src="./js/modernizr.min.js?a"></script>
   <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
 </head>
 <body class="intro-state">
@@ -46,7 +32,7 @@
 <div id="particles-js"></div>
 <div id="intro" class="page center">
   <div class="content">
-    <h1 id="site-logo"><img src="<?php echo $base_url;?>images/6430-logo.svg" alt="六四・三十年 | 走進他們的記憶隧道" /></h1>
+    <h1 id="site-logo"><img src="./images/6430-logo.svg" alt="六四・三十年 | 走進他們的記憶隧道" /></h1>
     <div class="desc">
       <p>1989年，他們懷抱希望，與廣場連結。30年一眨眼，物是人非。他們有的身體抱恙，有的永別人世，有的背著記憶匍匐前進，也有人日漸淡忘，開始懷疑堅守的意義。</p>
       <p>端傳媒走訪世界多地，尋訪9名親歷者，重拾微小且重要的歷史碎片。個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，我們以聲音、影像，留住一片記憶的虛擬場所。</p>
@@ -62,7 +48,7 @@
     <p>端傳媒走訪世界多地，尋訪9名親歷者，重拾微小且重要的歷史碎片。個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，我們以聲音、影像，留住一片記憶的虛擬場所。</p>
   </div>
   <div id="sound" class="page center">
-      <img src="<?php echo $base_url;?>images/sound.png"/>
+      <img src="./images/sound.png"/>
       <p>本頁面以被遺忘的聲音作為探索故事、喚回記憶的媒介，請打開喇叭或戴上耳機，聽聽他們的故事</p>
   </div>
   <div class="swipeup"><span></span></div>
@@ -264,7 +250,7 @@
       <div class="frame frame3 center" data-template="a">
         <div class="content">
           <p>我回到學校養傷，翌年畢業就回四川工作。一直到2005年趙紫陽去世，我的觸動很大，就趕去北京拜祭，在那裡看到天安門母親的留言，才知道有這樣的群體，也直接去拜訪他們了。因為消息封鎖，我之前沒懷疑過政府的說法，以為沒有死多少人，看到這些母親很艱苦追求真相，我很傷痛。</p>
-          <img src="<?php echo $base_url;?>images/2-img-1.png" alt="在《成都晚報》的刊登「向堅強的64遇難者母親致敬」廣告" />
+          <img src="./images/2-img-1.png" alt="在《成都晚報》的刊登「向堅強的64遇難者母親致敬」廣告" />
           <p>我覺得母親都是沒錯的，包括戒嚴部隊那些軍人的母親都是沒錯的，真正錯的是下手屠殺學生、軍人的人，真正錯的是制度，是那些權力不受限的人。2007年，我就在《成都晚報》刊登「向堅強的64遇難者母親致敬」廣告，作為一種紀念，被指涉嫌「煽動顛覆國家政權」，處以監視居住半年。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -353,7 +339,7 @@
       <div class="frame frame5 center" data-template="a">
         <div class="content">
           <p>6月3日下午，我負責帶特別糾察隊到人民英雄紀念碑保護絕食的劉曉波等四人。戒嚴部隊的車子前一天就已開進北京。當天上午，又有千多名軍警在六部口發射催淚瓦斯，用警棍和木棍驅散民眾。我感覺鎮壓隨時會發生。</p>
-          <img src="<?php echo $base_url;?>images/3-img-1.jpg" alt="六部口發射催淚彈照片" />
+          <img src="./images/3-img-1.jpg" alt="六部口發射催淚彈照片" />
           <p>出發前我接到了弟弟從溫州打來的電話，我心裡清楚，是母親讓他問的，就請他轉告：我沒事，還是在學校讀書做研究，請她放心。校園內是一片生離死別的氛圍。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -935,7 +921,7 @@
         <div class="swipeup"><span></span></div>
       </div>
       <div class="frame frame12" data-template="g">
-        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/228d95664aca49d69b01b3232cae101b.mp4" data-video-m="<?php echo $base_url;?>video/8-f12-m.mp4"></div>
+        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/228d95664aca49d69b01b3232cae101b.mp4" data-video-m="./video/8-f12-m.mp4"></div>
         <a href="#" class="video-btn"><span class="sr-text">Play</span></a>
         <a href="#" class="next-btn">Next</a>
         <a href="#" class="prev-btn">Previous</a>
@@ -1116,10 +1102,10 @@
   </div>
 </div>
 <!-- scripts -->
-<script src="<?php echo $base_url;?>js/jquery.min.js"></script>
-<script src="<?php echo $base_url;?>js/hammer.min.js"></script>
-<script src="<?php echo $base_url;?>js/particles.js?u"></script>
-<script src="<?php echo $base_url;?>js/app.js?u"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/hammer.min.js"></script>
+<script src="./js/particles.js?u"></script>
+<script src="./js/app.js?u"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;
