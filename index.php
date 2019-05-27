@@ -30,7 +30,7 @@
 </a>
 <a href="#" id="grid-btn"><span class="sr-text">Grid View</span></a>
 <a href="#" id="home-btn" target="_blank"><span class="sr-text">返回光點主頁</span></a>
-<a href="#" id="credits-btn">credits</a>
+<a href="#" id="credits-btn">製作團隊</a>
 <div id="touch-detect"></div>
 <!-- count particles -->
 <!-- <div class="count-particles">
