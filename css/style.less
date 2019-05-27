@@ -199,6 +199,7 @@ body{
   //   }
   // }
   &.overlay-state{
+    touch-action: auto !important;
     #credits{
       pointer-events: auto;
     }
@@ -409,6 +410,9 @@ body.landing-state{
   pointer-events: none;
 }
 #credits{
+  -webkit-user-drag: auto;
+  touch-action: auto;
+  user-select: auto;
   z-index: 12;
   background: rgba(25, 25, 25, .9);
   h3{
@@ -429,6 +433,7 @@ body.landing-state{
     right: 20px;
     font-size: 30px;
     font-weight: 100;
+    z-index: 1;
   }
   &:before{
     content: '';
@@ -925,7 +930,7 @@ body.landing-state{
   }
   #intro, #landing, .section{
     &:before{
-      background: ~'url(../images/fade2.png?b) repeat 0 0/cover';
+      background: ~'url(../images/fade2.png) repeat 0 0/cover';
       // background: ~'url(../images/fade-pat.png) repeat 0 0/250px auto';
     }
   }
@@ -938,6 +943,14 @@ body.landing-state{
       animation: flash 7.4s 2s linear forwards;
     }
   }
+  // #intro{
+  //   .content{
+
+  //     max-height: 80%;
+  //     overflow: auto;
+  //     -webkit-overflow-scrolling: touch;
+  //   }
+  // }
   #tips{
     bottom: 30px;
     left: 30px;
@@ -945,6 +958,15 @@ body.landing-state{
   #credits-btn{
     bottom: 30px;
     right: 30px; 
+  }
+  #credits{
+
+    .content{
+      height: 80%;
+      top: auto;
+      transform: none;
+      margin-top: 10%;
+    }
   }
   #story1{
     .frame2{

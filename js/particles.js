@@ -2211,7 +2211,7 @@ var audioHandler = {
       //}
 
     audioHandler.playing = true;
-    var instance = createjs.Sound.play(id, {volume: 1});
+    var instance = createjs.Sound.play(id, {volume: .1});
     if (instance == null || instance.playState == createjs.Sound.PLAY_FAILED) {
       audioHandler.reset();
       return;

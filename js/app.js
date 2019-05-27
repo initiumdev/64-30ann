@@ -210,6 +210,7 @@ function stage2(){
 
 var mode = 'l', scrollable = true, scrollable1 = true;
 var pageHandler = {
+  mc: null,
   pages: ["intro", "landing2", "story"], //["intro", "landing", "landing2", "story"]
   cur_page: 0,
   cur_id: null,
@@ -259,11 +260,12 @@ var pageHandler = {
       stage2();
     }, duration); //7800
 
-    var mc = new Hammer(document.getElementsByTagName('body')[0]);
-    mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-    mc.on("swipeup swipedown", function(ev) {
+    _.mc = new Hammer(document.getElementsByTagName('body')[0]);
+    _.mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+    _.mc.on("swipeup swipedown", function(ev) {
       // console.log(ev.type +" gesture detected.");
       if(!$('body').hasClass('overlay-state')){
+        // ev.preventDefault();
 
         if(ev.type == 'swipeup'){
           _.prevNextHandler(true);
@@ -271,6 +273,9 @@ var pageHandler = {
         else{
           _.prevNextHandler(false);
         }
+      }
+      else{
+
       }
     });
     $(window).bind('mousewheel', function(e) {
@@ -439,12 +444,15 @@ $('#credits-btn').bind('click', function(e){
   var $credits = $('#credits');
   $credits.toggleClass('active');
   if($credits.hasClass('active')){
+    pageHandler.mc.set({ touchAction: 'auto' });
     $credits.fadeIn(400);
     $('body').addClass('overlay-state');
+    $credits.get(0).scrollTop = 0;
   }
   else{
+    pageHandler.mc.set({ touchAction: 'none' });
     $credits.fadeOut(200);
-    $('body').addClass('overlay-state'); 
+    $('body').removeClass('overlay-state'); 
   }
 });
 $('#credits .close-btn').bind('click', function(e){
