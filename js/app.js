@@ -113,7 +113,7 @@ function stage2(){
             "type": "image",
             "image": {
               "src": [base_url+"images/1.png?c", base_url+"images/2.png?d", base_url+"images/3.png?c", base_url+"images/4.png?c", base_url+"images/5.png?c", base_url+"images/6.png?c", base_url+"images/7.png?c", base_url+"images/8.png?c", base_url+"images/9.png?c"],
-              "active_src": [base_url+"images/1-active.png?c", base_url+"images/2-active.png?c", base_url+"images/3-active.png?c", base_url+"images/4-active.png?c", base_url+"images/5-active.png?c", base_url+"images/6-active.png?c", base_url+"images/7-active.png?c", base_url+"images/8-active.png?c", base_url+"images/9-active.png?c"],
+              "active_src": [base_url+"images/1-active.png?d", base_url+"images/2-active.png?d", base_url+"images/3-active.png?d", base_url+"images/4-active.png?d", base_url+"images/5-active.png?d", base_url+"images/6-active.png?d", base_url+"images/7-active.png?d", base_url+"images/8-active.png?d", base_url+"images/9-active.png?d"],
               "width": 234,
               "height": 234
             }
