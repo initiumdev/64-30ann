@@ -1048,55 +1048,59 @@
     </div>
   </div> <!-- end of #story9 -->
 <div id="credits" class="page">
+  <a href="#" class="close-btn">&#10005;</a>
   <div class="content">
-    記者
-鄭佩珊
-楊子琪
-雷隆
+    <div class="scroll">
+      <h2>製作團隊</h2>
+      <h3>記者</h3>
+      鄭佩珊<br class="mobile-only"/>
+      楊子琪<br class="mobile-only"/>
+      雷隆<br class="mobile-only"/>
+      <br/><br/>
+      <h3>特約記者、攝影</h3>
+      楊平<br class="mobile-only"/>
+      姚佳讖<br class="mobile-only"/>
+      Yuhong Pang<br class="mobile-only"/>
+      Dan<br class="mobile-only"/>
+      <br/><br/>
+      <h3>實習記者</h3>
+      徐涵<br class="mobile-only"/>
+      郭芷甄<br class="mobile-only"/>
+      余美霞<br class="mobile-only"/>
+      梁敏琪<br class="mobile-only"/>
+      <br/><br/>
+      <h3>攝影</h3>
+      林振東<br class="mobile-only"/>
+      Stanley Leung<br class="mobile-only"/>
+      陳焯煇<br class="mobile-only"/>
+      <br/><br/>
+      <h3>圖片</h3>
+      Getty Images<br class="mobile-only"/>
+      受訪者、學聯、陳清華、Seuil及Delcourt出版社提供<br class="mobile-only"/>
+      翻拍自《天安門一九八九》<br class="mobile-only"/>
+      <br/><br/>
+      <h3>圖片編輯</h3>
+      林振東<br class="mobile-only"/>
+      <br/><br/>
+      <h3>影片製作</h3> 
+      Stanley Leung <br class="mobile-only"/>
+      <br/><br/>
+      <h3>設計/插畫</h3>
+      端傳媒設計部<br class="mobile-only"/>
+      <br/><br/>
+      <h3>網頁</h3>
+      Document On Ready Ltd.<br class="mobile-only"/>
+      <br/><br/>
+      <h3>策劃統籌</h3>
+      鄭佩珊<br class="mobile-only"/>
+      陳倩兒<br class="mobile-only"/>
+      <br/><br/>
+      <h3>監製</h3>
+      李志德<br class="mobile-only"/>
+      <br/><br/>
+      註：網頁內文按受訪者訪談及經歷，以第一人稱表述。
 
-特約記者、攝影
-楊平
-姚佳讖
-Yuhong Pang
-Dan
-
-實習記者
-徐涵
-郭芷甄
-余美霞
-梁敏琪
-
-攝影
-林振東
-Stanley Leung
-陳焯煇
-
-圖片
-Getty Images
-受訪者、學聯、陳清華、Seuil及Delcourt出版社提供
-翻拍自《天安門一九八九》
-
-圖片編輯
-林振東
-
-影片製作
-Stanley Leung 
-
-設計/插畫
-端傳媒設計部
-
-網頁
-Document On Ready Ltd.
-
-策劃統籌
-鄭佩珊
-陳倩兒
-
-監製
-李志德
-
-註：網頁內文按受訪者訪談及經歷，以第一人稱表述。
-
+    </div>
   </div>
 </div>
 <!-- scripts -->
