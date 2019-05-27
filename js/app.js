@@ -279,7 +279,7 @@ var pageHandler = {
 
       }
     });
-    $(window).bind('mousewheel', function(e) {
+    $(window).bind('wheel', function(e) {
       if(!$('body').hasClass('overlay-state')){
 
         if (e.originalEvent.wheelDelta >= 0) {
