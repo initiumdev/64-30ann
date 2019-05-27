@@ -642,7 +642,7 @@ body.landing-state{
   .frame13{
     &, &:before{
       opacity: 0;
-      transition: opacity 1.5s .4s ease;
+      transition: opacity 1.5s .5s ease;
     }
     &:before{
       position: absolute;
@@ -658,12 +658,12 @@ body.landing-state{
         opacity: 1;
       }
     }
-    // .content{
-    //   transition-delay: 1.45s;
-    // }
-    // .swipeup{
-    //   transition-delay: 2s;
-    // }
+    .content{
+      transition-delay: 1.55s;
+    }
+    .swipeup{
+      transition-delay: 2s;
+    }
   }
 }
 @media (min-width: 900px){ //landscape
@@ -842,6 +842,13 @@ body.landing-state{
         top: 25%;
       }
     }
+    .frame3{
+      .content{
+        padding-top: 60px;
+        top: auto;
+        transform: none;
+      }
+    }
     .frame9{
       .content{
         padding-top: 5%;
@@ -997,10 +1004,7 @@ body.landing-state{
     }
   }
   #story2{
-    .frame3{ 
-      p{
-        margin-bottom: 0;
-      }
+    .frame4{ 
       img{
         width: 205px;
         margin-top: -10px;

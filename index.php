@@ -95,7 +95,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame3 top" data-template="a">
+      <div class="frame frame3 center" data-template="a">
         <div class="content">
           <p>由醫院蓋章的死亡報告單，王楠死於1989年6月3日，診斷為「槍傷在外死亡」。北京公安局發出的屍體火化證明，王楠「屍體業經我局檢驗，經查證系在外死亡」。</p>
           <a href="#" class="prev-btn">Previous</a>
@@ -104,9 +104,9 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame4 center" data-template="e">
+      <div class="frame frame4 top" data-template="a">
         <div class="content">
-          <p>我沒有見到兒子的最後一面。6月14號，接到電話說他可能在護國寺中醫院，我去了，但陪我去的學生不讓我看遺體，怕我難過。他去看了：王楠的膊子開過一個刀，有一個疤痕，還有他穿的衣服鞋子，確定就是他。</p>
+          <p>我沒有見到兒子的最後一面。6月14號，接到電話說他可能在護國寺中醫院，我去了，但陪我去的學生不讓我看遺體，怕我難過。</p>
           <p>醫生告訴我，這屍體頭部有繃帶，最初被埋在天安門廣場前方第28中學的草坪，但開始有味道了，又被挖出來，估計王楠當時在軍訓身穿軍服，被誤以為是軍人，才送到醫院。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
@@ -141,8 +141,9 @@
 
       <div class="frame frame8 bottom" data-template="a">
         <div class="content">
-          <p>兒子當時住在我們對面的一座樓。3號晚上十點多，我看到他房間還亮著燈，想他肯定在家，但第二天清晨6點，我看到他房間燈還是亮的，他肯定出去了。</p>
-          <p>我趕緊過去，看到他留了一張紙條給我「我去找同學，六月三號晚上」。他的床也是沒睡過的樣子。我給學校打電話，問他有沒有到學校去，我找他的同學，問有沒有見過他，同學都說沒見到。我一直很希望他還活著的。</p>
+
+          <p>兒子當時住在我們對面的一座樓。3號晚上10十點多，我看到他房間還亮著燈，想他肯定在家，但第二天清晨6點，我看到他房間燈還是亮的，他肯定出去了。</p>
+          <p>我趕緊過去，看到他留了一張紙條給我「我去找同學，六月三號晚上。」他的床也是沒睡過的樣子。我給學校打電話，問他有沒有到學校去，我找他的同學，問有沒有見過他，同學都說沒見到。我一直很希望他還活著的。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
         </div>
@@ -169,14 +170,15 @@
 
       <div class="frame frame11 center" data-template="d">
         <div class="content">
-          <p>經過半年時間，我就慢慢恢復，應該是說比較理智吧。我就下定決心，要把這個事情搞清楚。為什麼王楠頭上包了繃帶、但不在醫院？為什麼屍體被埋起來了？但是什麼線索都沒有。我只好逢人就說，就像祥林嫂一樣。坐公車也好，買東西也好，任何場合任何地點，就是除了我以外，只要有兩、三個人，我就說這個事情。</p>
+          <p>經過半年時間，我就慢慢恢復，應該是說比較理智吧。我就下定決心，要把這個事情搞清楚。為什麼王楠頭上包了繃帶、但不在醫院？為什麼屍體被埋起來了？但是什麼線索都沒有。</p>
+          <p>我只好逢人就說，就像祥林嫂一樣。坐公車也好，買東西也好，任何場合任何地點，就是除了我以外，只要有兩、三個人，我就說這個事情。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
         </div>
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame12 center" data-template="d">
+      <div class="frame frame12 center" data-template="a">
         <div class="content">
           <p>追尋真相期間，知道很多人遇難，認識了另一個母親丁子霖。政府一直沒有公佈死難者名單，還說是我們家屬覺得不好看不讓他講。我就跟丁子霖一齊商量去尋訪，想要揭穿這個謊言。</p>
           <p>丁是老師，認識很多學生，我也不停去問，去核對，也會有人上門提供線索，但即使知道一個難屬住在哪裏，去尋訪的時候也要很謹慎。</p>
@@ -195,7 +197,7 @@
         </div>
         <div class="swipeup"><span></span></div>
       </div>
-
+      
       <div class="frame frame14 center" data-template="a">
         <div class="content">
           <p>曾經有難屬說，把孩子的骨灰撒了在北海公園的湖裡，以後家人每次去公園，便是去看孩子。</p>
@@ -214,10 +216,10 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame16 center" data-template="a">
+      <div class="frame frame16 bottom" data-template="a">
         <div class="content">
           <p>30年過去了，我們年紀大了，56位難屬已經離世，現在還有126名成員。</p>
-          <p>我的丈夫、孩子的父親王範地前年底去世了，我今年也82歲了，我不希望走的時候，這事情還不解決；萬一還未解決，希望活著的人，繼續堅持，奮鬥一生。</p>
+          <p>我的丈夫、孩子的父親王範地前年底去世了，我今年也82歲了，不希望走的時候，這事情還不解決；萬一還未解決，希望活著的人，繼續堅持，奮鬥一生。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
         </div>
@@ -238,7 +240,7 @@
   <div id="story2" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「民主運動不一定要在天安門，不一定要在長安街。」</p>
+        <p class="first">「民主運動不一定要在那個天安門廣場，不一定要在那個長安街，民主運動應該是在每一個有公權力的地方。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
@@ -261,17 +263,24 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame3 center" data-template="a">
+      <div class="frame frame3 center" data-template="d">
         <div class="content">
           <p>我回到學校養傷，翌年畢業就回四川工作。一直到2005年趙紫陽去世，我的觸動很大，就趕去北京拜祭，在那裡看到天安門母親的留言，才知道有這樣的群體，也直接去拜訪他們了。因為消息封鎖，我之前沒懷疑過政府的說法，以為沒有死多少人，看到這些母親很艱苦追求真相，我很傷痛。</p>
-          <img src="<?php echo $base_url;?>images/2-img-1.png" alt="在《成都晚報》的刊登「向堅強的64遇難者母親致敬」廣告" />
-          <p>我覺得母親都是沒錯的，包括戒嚴部隊那些軍人的母親都是沒錯的，真正錯的是下手屠殺學生、軍人的人，真正錯的是制度，是那些權力不受限的人。2007年，我就在《成都晚報》刊登「向堅強的64遇難者母親致敬」廣告，作為一種紀念，被指涉嫌「煽動顛覆國家政權」，處以監視居住半年。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
         <div class="swipeup"><span></span></div>
       </div>
-      <div class="frame frame4 top" data-template="a">
+      <div class="frame frame4 center" data-template="d">
+        <div class="content">
+          <img src="<?php echo $base_url;?>images/2-img-1.png" alt="在《成都晚報》的刊登「向堅強的64遇難者母親致敬」廣告" />
+          <p>我覺得母親都是沒錯的，包括戒嚴部隊那些軍人的母親都是沒錯的，真正錯的是下手屠殺學生、軍人的人，真正錯的是制度，是那些權力不受限的人。2007年，我就在《成都晚報》刊登「向堅強的64遇難者母親致敬」廣告，作為一種紀念，後來被指涉嫌「煽動顛覆國家政權」，處以監視居住半年。</p>
+          <a href="#" class="next-btn">Next</a>
+          <a href="#" class="prev-btn">Previous</a>
+        </div>
+        <div class="swipeup"><span></span></div>
+      </div>
+      <div class="frame frame5 top" data-template="a">
         <div class="content">
           <p>從天安門母親得知，四川有死難者吳國鋒和肖傑，我開始每年去掃墓。我們本來不認識的，但都是同一個時間去北京讀書。他們為國家、為民主走了，我便親自上門看看他們的家人，中秋節買點月餅去，當他們是自己的親人，還成為了他們的義子。</p>
           <p>後來輾轉得到一名死難者的資料，我轉交至天安門母親，那就成了他們名冊上第202名死難者。</p>
@@ -280,7 +289,7 @@
         </div>
         <div class="swipeup"><span></span></div>
       </div>
-      <div class="frame frame5 top" data-template="a">
+      <div class="frame frame6 top" data-template="a">
         <div class="content">
           <p>我開始維權了。公權力就是猛獸，我就是要把權力關進籠子內，我就是馴獸師。這些年，我去過各省市逾40個派出所協助，穿川過省的話會搭硬座，睡網吧，有需要的時候就從袋子裡拿出紙板來製作牌子。一、二百元的衣服我捨不得，東西能用就好，剩下來的錢就給良心犯做飯，例如六四酒案那幾位。有人從監獄出來也會發紅包，就是89.64元。</p>
           <a href="#" class="next-btn">Next</a>
@@ -288,7 +297,7 @@
         </div>
         <div class="swipeup"><span></span></div>
       </div>
-      <div class="frame frame6 top" data-template="a">
+      <div class="frame frame7 top" data-template="a">
         <div class="content">
           <p>2015年清明前夕，我和朋友又去掃墓，結果被「尋釁滋事罪」起訴。我穿了一身灰白睡衣出席審訊，就是為了方便做「中國夢」，最終判刑4年。我快樂啊，我坐監獄，在裡面也是維權。剛剛3月底才出來，四川很多維權朋友都被抓了，我還是悄悄去拜祭了，沒有什麼害怕的，因為紀念自己的同胞。</p>
           <p>早陣子，我有事打110報警，對方問我的電話尾號是否8964，我說是啊，你知不知道8964什麼事情？你不知道的話，那我給你解釋一下。</p>
@@ -297,7 +306,7 @@
         </div>
         <div class="swipeup"><span></span></div>
       </div>
-      <div class="frame frame7 center end" data-template="h">
+      <div class="frame frame8 center end" data-template="h">
         <div class="content">
           <p>你看到這名學生怎樣成為「馴獸師」，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
@@ -1118,8 +1127,8 @@
 <!-- scripts -->
 <script src="<?php echo $base_url;?>js/jquery.min.js"></script>
 <script src="<?php echo $base_url;?>js/hammer.min.js"></script>
-<script src="<?php echo $base_url;?>js/particles.js?u"></script>
-<script src="<?php echo $base_url;?>js/app.js?u"></script>
+<script src="<?php echo $base_url;?>js/particles.js?v"></script>
+<script src="<?php echo $base_url;?>js/app.js?v"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;
