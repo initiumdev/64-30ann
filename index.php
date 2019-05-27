@@ -17,7 +17,7 @@
         $base_url = 'http://'.$_SERVER['HTTP_HOST'].'/64-30/';
         $js_base_url = $base_url;
     } elseif(strpos($_SERVER['HTTP_HOST'], 'dev') !== FALSE) {
-        $base_url = 'https://'.$_SERVER['HTTP_HOST'].'/64-30ann/';
+        $base_url = 'http://'.$_SERVER['HTTP_HOST'].'/64-30ann/';
         $js_base_url = $base_url;
     } else {
         $base_url = 'https://theinitium.com/project/20190529-project-6430/';
