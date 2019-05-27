@@ -1083,6 +1083,7 @@
       <br/><br/>
       <h3>特約記者、攝影</h3>
       楊平<br class="mobile-only"/>
+      Yuhong Pang<br class="mobile-only"/>
       姚佳讖<br class="mobile-only"/>
       Yuhong Pang<br class="mobile-only"/>
       Dan<br class="mobile-only"/>
