@@ -464,7 +464,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame16 center" data-template="h">
+      <div class="frame frame16 center end" data-template="h">
         <div class="content">
           <p>你看了這個學者為何畢生研究六四，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
@@ -477,14 +477,14 @@
   <div id="story4" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「當時我眼淚嘩嘩地流，我覺得對不起孩子……真對不起……我不想想這些事了。」</p>
+        <p class="first">「六四一天不昭雪，我們都没有任何的理由進入這個廣場，這裏邊都是冤魂的，我們不能去踩。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
       <div class="frame frame1" data-template="f">
         <div class="top content">
           <h2><a class="audio-btn" href="#"></a>孫立勇</h2>
-          <p>58歲，曾在北京當過8年警察，八九學運與市民圍著軍車，教育軍人不要傷害學生。</p>
+          <p>58歲，曾在北京當過8年警察，八九學運時與市民圍著軍車，教育軍人不要傷害學生。</p>
           <a href="#" class="next-btn">Next</a>
         </div>
         <div class="swipeup"><span></span></div>
@@ -504,7 +504,7 @@
         <div class="content">
           <p>89年6月3日晚，在家吃過晚飯後，我牽着兩歲多的女兒，往天安門廣場走去。</p>
           <p>走到燕京飯店附近，女兒遠遠看見正在焚燒的車輛，說：「爸爸，你看那邊那麼亮。」這時，我們身邊突然響起陣陣急促的子彈聲，孩子不懂危險，反而興奮起來：「爸爸，發炮了，過年了！」旁邊有人喊「快跑」，我本來揹着孩子，馬上轉而抱住她，往邊上的胡同裏飛奔逃命。</p>
-          <p>那會兒年輕氣盛啊，現在想來真是後怕。</p>
+          <p>那會兒年輕氣盛啊，現在想來真是害怕。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -513,7 +513,7 @@
 
       <div class="frame frame4 top" data-template="a">
         <div class="content">
-          <p>高考落榜之後，我進了公安局做警察八年，但在87年離開了。我不喜歡公安局裏的腐敗，領導互相拍馬屁，他們希望我是一隻綿羊，但我是一個愛頂牛的人。</p>
+          <p>高考落榜之後，我進公安局做了8年警察，但在87年離開了。我不喜歡公安局裏的腐敗，領導互相拍馬屁，他們希望我是一隻綿羊，但我是一個愛頂牛的人。</p>
           <p>到了學運期間，我在離天安門廣場不遠的公司當保安。每天下班後就騎車到廣場，捐款、送物資，隔着糾察隊圍欄與學生對話：「北京市民支持你們！」</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -553,7 +553,7 @@
 
       <div class="frame frame8 center" data-template="d">
         <div class="content">
-          <p>六四之後，我沒有再進過天安門廣場。在1990年6月3日晚，我和一起做民主刊物的朋友坐在人民大會堂門口台階上，我們約定：一天六四不昭雪，一天不踏入這個廣場。這裏面都是冤魂啊，我們不能去踩他們。</p>
+          <p>六四之後，我沒有再進過天安門廣場。在90年6月3日晚，我和一起做民主刊物的朋友坐在人民大會堂門口台階上，我們約定：一天六四不昭雪，一天不踏入這個廣場。這裏面都是冤魂啊，我們不能去踩他們。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -562,7 +562,7 @@
 
       <div class="frame frame9 center" data-template="d">
         <div class="content">
-          <p>92年，我因為製作民主刊物，被判反革命宣傳煽動罪，監禁七年。與女兒分離一年半後，我們第一次在獄中相見。</p>
+          <p>92年，我因為製作民主刊物，被判反革命宣傳煽動罪，監禁7年。與女兒分離一年半後，我們第一次在獄中相見。</p>
           <p>她完全不認識我了。我穿着囚服，剃着小寸頭。我硬給她抱過來，她哇哇地哭。當時我眼淚嘩嘩地流，我覺得對不起孩子……真對不起……我不想想這些事了。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -572,9 +572,9 @@
 
       <div class="frame frame10 bottom" data-template="a">
         <div class="content">
-          <p>96年，女兒第二次來探監，我事先不知道，直到獄警隊長來跟我說：「孫哥，你女兒也來了。」我太激動了。<br/><br/>我們隔着玻璃說話。我一看，孩子長高了，都長1米5了，四年級了。我問她，還認識爸爸嗎？</p>
-          <p>她說，認識，老看你照片。她的眼淚在眼眶裏打轉，就是不下來。</p>
-          <p>我說，你好好讀書，你不要再來了，爸爸還要一年多就回家了。</p>
+          <p>96年，女兒第二次來探監，我事先不知道，直到獄警隊長來跟我說：「孫哥，你女兒也來了。」我太激動了。</p>
+          <p>我們隔着玻璃說話。我一看，孩子長高了，都長1米5了，四年級了。我問她，還認識爸爸嗎？</p>
+          <p>她說，認識，老看你照片。她的眼淚在眼眶裏打轉，就是不下來。我說，你好好讀書，你不要再來了，爸爸還要一年多就回家了。</p>
           <p>我出獄的時候，女兒11歲，自此我們就像朋友一樣相處，無話不說。她喜歡哪個男生都告訴我。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -584,8 +584,8 @@
 
       <div class="frame frame11 bottom" data-template="a">
         <div class="content">
-          <p>出獄後，我先後開過兩家書店。2003年，第二家書店開在北京大紅門，租金很貴，我跟朋友借了好幾萬。但開店不到三個月，我參與組織了一個民運人士的私人聚會。第二天，兩輛警車直接開到我店門口了。</p>
-          <p>我說，你們什麼意思？他們那帶頭的說：「孫大哥，沒事兒，想您了，看看您來了，想找您下盤棋。」結果他下完圍棋殺象棋，殺完象棋下跳棋，從早上八點下到晚上八點，我一天一單生意都沒做成。</p>
+          <p>出獄後，我先後開過兩家書店。2003年，第二家書店開在北京大紅門，租金很貴，我跟朋友借了好幾萬。但開店不到3個月，我參與組織了一個民運人士的私人聚會。第二天，兩輛警車直接開到我店門口了。</p>
+          <p>我說，你們什麼意思？他們那帶頭的說：「孫大哥，沒事兒，想您了，看看您來了，想找您下盤棋。」結果他下完圍棋殺象棋，殺完象棋下跳棋，從早上8點下到晚上8點，我一天一單生意都沒做成。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -605,7 +605,7 @@
 
       <div class="frame frame13 center end" data-template="h">
         <div class="content">
-          <p>你看了一個由北京逃到海外的故事，<br class="desktop-only"/>要走進其他親歷者的記憶隧道：</p>
+          <p>你看了一個由北京逃到海外的故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道：</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -616,7 +616,7 @@
   <div id="story5" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「我們到現在都沒法和這些（事情）和解的。這些是和解不了的。我和同學、病人聊起天，要不沒話聊，要不沒得做朋友。」</p>
+        <p class="first">「這麼多年，我們沒法和這件事和解的。是和解不了的，我跟朋友、同學、病人聊起天，要不沒話聊，要不無法做朋友。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
@@ -631,7 +631,7 @@
 
       <div class="frame frame2 bottom" data-template="a">
         <div class="content">
-          <p>89年5月，香港中文大學幾乎所有學生都在關心北京學運。我是社會學系四年級學生，也是中大「國是學會」的成員，平日十分關心中國事務，到了八九民運期間，更加整日討論學運。我幾乎無心考試，5月24日，我和同學一齊自費飛到北京，帶香港市民的捐款和10部對講機，去支援北京學生。</p>
+          <p>89年5月，香港中文大學幾乎所有學生都在關心北京學運。我是社會學系四年級學生，也是中大「國是學會」的成員，平日十分關心中國事務，到了八九民運期間，更加整日討論學運。我幾乎無心考試，5月24日，我和同學一齊自費飛到北京，帶著香港市民的捐款和10部對講機，去支援北京學生。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -718,7 +718,7 @@
 
       <div class="frame frame11 center end" data-template="j">
         <div class="content">
-          <p>你看到了一名香港學生怎樣支援北京學運，想要走進其他親歷者的記憶隧道</p>
+          <p>你看到了一名香港學生怎樣支援北京學運，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -729,20 +729,20 @@
   <div id="story6" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「六四可能要沉默很長一段時間。我現在如此對自己說。」</p>
+        <p class="first">「六四可能要沉默很長一段時間。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
       <div class="frame frame1" data-template="f">
         <div class="top content">
-          <h2><a class="audio-btn" href="#"></a>陳哲</h2>
-          <p>52歲，現為香港中學老師，1989年，他是香港中文大學「國是學會」成員，隻身赴京支援北京學運。</p>
+          <h2><a class="audio-btn" href="#"></a>陳哲（化名）</h2>
+          <p>52歲，現為香港中學老師，1989年，他是香港中文大學「國是學會」成員，曾赴京支援北京學運。</p>
           <a href="#" class="next-btn">Next</a>
         </div>
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame2 center" data-template="d">
+      <div class="frame frame2 center" data-template="a">
         <div class="content">
           <p>5月22日，我考試結果當晚就自己飛到北京，希望支援學運。我去了天安門廣場，參加過遊行。中大學生住在北京飯店的同一個房間，我也會去大學區認識朋友，在他們的宿舍過夜。6月3日晚上，大家都叫我離開，我找了個藉口，回到天安門廣場人民英雄紀念碑，想和學生們在一起。</p>
           <a href="#" class="next-btn">Next</a>
@@ -795,7 +795,7 @@
 
       <div class="frame frame8 center end" data-template="h">
         <div class="content">
-          <p>30年過去，學生變成了老師。<br class="desktop-only"/>想要走進其他親歷者的記憶隧道嗎？</p>
+          <p>你看到一名學生成了老師的變化。<br class="desktop-only"/>想走進其他親歷者的記憶隧道嗎？</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -806,7 +806,7 @@
   <div id="story7" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「千萬不要有一個想法，當一些事成為日常以後，你就覺得，是這樣的啦，沒眼看。香港人千萬不要有這個（想法）。」</p>
+        <p class="first">「千萬不要有一個想法，當一些事成為日常以後，你就覺得，是這樣的啦，沒眼看。那如果有一天，來到你面前，你怎辦？」</p>
       </div>
     </div>
     <div class="subpage detail-article">
@@ -863,7 +863,7 @@
   <div id="story8" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「那時候北京幾乎失去秩序，路上也沒有人盤查，雖然沿路都是解放軍的車子。整條道路，我第一一次看到那麼多的軍車。」</p>
+        <p class="first">「那時候北京幾乎失去秩序，路上也沒有人盤查，雖然沿路都是解放軍的車子。整條道路，我第一次看到那麼多的軍車。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
@@ -897,7 +897,8 @@
       <div class="frame frame5" data-template="f">
         <div class="top content">
           <h2><a class="audio-btn" href="#"></a>高源流</h2>
-          <p>北京情勢陷入緊張時。報社指定我去支援採訪。六月三號深夜，我從首都機場雇車進城。 沿路都是解放軍的車子，軍車、裝甲運兵車，也有坦克。我們看到有些解放軍躺在軍車底盤下。兩個個體戶就開車，沿路就喊「解放軍萬歲！」「解放軍萬歲！」把手伸出車窗。我們問他為什麼要這麼喊，他們說：「這樣比較容易通過」。</p>
+          <p>北京情勢陷入緊張時報社指定我去支援採訪。6月3號深夜，我從首都機場僱車進城。 沿路都是解放軍的車子，軍車、裝甲運兵車，也有坦克。我們看到有些解放軍躺在軍車底盤下。兩個個體戶開車，把手伸出車窗，沿路就喊「解放軍萬歲！」「解放軍萬歲！」。我們問他為什麼要這麼喊，他們說：「這樣比較容易通過」。</p>
+          <p>三名台灣《聯合報》記者，八九民運期間先後在北京現場採訪，有人搭過高喊「解放軍萬歲」的車子入城，有人看到「打來打去」的複雜真相。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -922,7 +923,7 @@
       <div class="frame frame8" data-template="f">
         <div class="top content">
           <h2><a class="audio-btn" href="#"></a>王震邦</h2>
-          <p>我在5月中到北京採訪，寫報導也兼攝影，從運動之初在校園爭取新聞自由，到絕食開始，最後經歷軍隊鎮壓。</p>
+          <p>我在5月中到北京採訪，從運動之初在校園爭取新聞自由，到絕食開始，最後經歷軍隊鎮壓，寫報導也兼攝影，這是我拍攝的照片。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -944,7 +945,7 @@
         <div class="swipeup"><span></span></div>
       </div>
       <div class="frame frame12" data-template="g">
-        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/228d95664aca49d69b01b3232cae101b.mp4" data-video-m="<?php echo $base_url;?>video/8-f12-m.mp4"></div>
+        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/228d95664aca49d69b01b3232cae101b.mp4" data-video-m="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/02e383afb97d40859d5bc516395ae37d.mp4"></div>
         <a href="#" class="video-btn"><span class="sr-text">Play</span></a>
         <a href="#" class="next-btn">Next</a>
         <a href="#" class="prev-btn">Previous</a>
@@ -952,7 +953,8 @@
       </div>
       <div class="frame frame13 center" data-template="d">
         <div class="content">
-          <p>我們採訪團的現場報導，後來得了獎，但我不願去領獎。這是場悲劇，別人坐牢、死亡，你去領獎這算什麼呢？我這麼多年不願受訪，當然有些人很樂意反覆訴說那樣的經歷，不過那種「樂意」對我來講，就像魯迅說的「吃人血饅頭」，「吃人血饅頭」做為一個悲劇來講，那就變成了殯葬業而已。</p>
+          <p>我們採訪團的現場報導，後來得了獎，但我不願去領獎。這是場悲劇，別人坐牢、死亡，你去領獎這算什麼呢？</p>
+          <p>我這麼多年不願受訪，當然有些人很樂意反覆訴說那樣的經歷，不過那種「樂意」對我來講，就像魯迅說的「吃人血饅頭」，「吃人血饅頭」做為一個悲劇來講，那就變成了殯葬業而已。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -960,7 +962,7 @@
       </div>
       <div class="frame frame14 center end" data-template="h">
         <div class="content">
-          <p>你看了這一組由台灣到北京的紀者故事，<br class="desktop-only"/>想要走進其他親歷者的記憶隧道</p>
+          <p>你看了這一組由台灣到北京的記者故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -972,7 +974,7 @@
   <div id="story9" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「一個人如果在自己的故土上都不能說話，那也是一種流亡啊。」</p>
+        <p class="first">「一個人如果在自己的故土上都不能說話，我想那也是一種流亡吧。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
@@ -987,7 +989,7 @@
 
       <div class="frame frame2 bottom" data-template="a">
         <div class="content">
-          <p>我流亡去了法國，當了大學教授。2017年，兩家出版社邀請我與記者、畫家合作，以親身經歷為藍本，製作了一本漫畫《天安門1989：我們被粉碎的希望》，獻給六四三十年。</p>
+          <p>我流亡去了法國，當了大學教授。2017年，兩家出版社邀請我與記者、畫家合作，以親身經歷為藍本，製作了一本漫畫《天安門1989：我們被粉碎的希望》，獻給六四30年。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -996,7 +998,7 @@
 
       <div class="frame frame3 bottom" data-template="a">
         <div class="content">
-          <p>書中的我開首便說，「我離開中國已經三十年，但是每天，我都會回到天安門廣場上。」這本連環畫並不完全是一部自傳，而是一個化身的陳述吧。這裡講述的故事，也並不僅僅屬於我自己，而是屬於數百萬在北京、在全世界經歷過這一事件的中國人。</p>
+          <p>書中的我開首便說，「我離開中國已經30年，但是每天，我都會回到天安門廣場上。」這本連環畫並不完全是一部自傳，而是一個化身的陳述吧。這裡講述的故事，也並不僅僅屬於我自己，而是屬於數百萬在北京、在全世界經歷過這一事件的中國人。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -1012,7 +1014,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame5 bottom" data-template="a">
+      <div class="frame frame5 bottom" data-template="e">
         <div class="content">
           <p>後來胡耀邦去世，學生遊行，還提出了七條要求，包括為知識分子平反、公開國家領導人收入，公開檢討政府失誤，解除報禁，取消遊行示威的規定等等。這條七點要求已經進入歷史，但在我看來，其中大多數並未過時，對當下中國仍有現實意義，中國遲早要做出回應。</p>
           <a href="#" class="next-btn">Next</a>
