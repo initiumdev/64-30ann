@@ -2294,7 +2294,7 @@ var audioHandler = {
       var c = audioHandler.circles[i];
       // var g = new createjs.Graphics().beginFill(color).drawCircle(centerX, centerY, lastRadius).endFill();
       
-      c.radius = lastRadius * 4;
+      c.radius = ((mode == 'l')? lastRadius * 2 : lastRadius * 3);
       // console.log(c.radius);
     }
 
