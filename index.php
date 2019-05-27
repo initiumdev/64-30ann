@@ -222,9 +222,10 @@
 
       <div class="frame frame17 center end" data-template="h">
         <div class="content">
-          <p>你剛剛走完這位母親30年以來的道路，想走進其他親歷者的記憶隧道</p>
+          <p>你剛剛走完這位母親30年以來的道路，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
         </div>
         <!-- <div class="swipeup"><span></span></div> -->
       </div>
@@ -289,14 +290,14 @@
           <p>早陣子，我有事打110報警，對方問我的電話尾號是否8964，我說是啊，你知不知道8964什麼事情？你不知道的話，那我給你解釋一下。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
-          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
         </div>
         <div class="swipeup"><span></span></div>
       </div>
       <div class="frame frame7 center end" data-template="h">
         <div class="content">
-          <p>你看到這名學生怎樣成為「馴獸師」，想走進其他親歷者的記憶隧道</p>
+          <p>你看到這名學生怎樣成為「馴獸師」，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
       </div>
@@ -452,8 +453,9 @@
 
       <div class="frame frame16 center" data-template="h">
         <div class="content">
-          <p>你看了這個學者為何畢生研究六四，想要走進其他親歷者的記憶隧道</p>
+          <p>你看了這個學者為何畢生研究六四，<br class="desktop-only"/>想要走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
       </div>
@@ -588,10 +590,11 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame13 top end" data-template="h">
+      <div class="frame frame13 center end" data-template="h">
         <div class="content">
-          <p>你看了一個由北京逃到海外的故事，要走進其他親歷者的記憶隧道：</p>
+          <p>你看了一個由北京逃到海外的故事，<br class="desktop-only"/>要走進其他親歷者的記憶隧道：</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
       </div>
@@ -704,6 +707,7 @@
         <div class="content">
           <p>你看到了一名香港學生怎樣支援北京學運，想要走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
       </div>
@@ -778,8 +782,9 @@
 
       <div class="frame frame8 center end" data-template="h">
         <div class="content">
-          <p>30年過去，學生變成了老師。想要走進其他親歷者的記憶隧道嗎？</p>
+          <p>30年過去，學生變成了老師。<br class="desktop-only"/>想要走進其他親歷者的記憶隧道嗎？</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
       </div>
@@ -835,8 +840,9 @@
 
       <div class="frame frame6 center end" data-template="h">
         <div class="content">
-          <p>你看到了一名香港記者如何報導中國的故事，想走進其他親歷者的記憶隧道</p>
+          <p>你看到了一名香港記者如何報導中國的故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -850,7 +856,7 @@
     <div class="subpage detail-article">
       <div class="frame frame1" data-template="f">
         <div class="top content">
-          <h2><a class="audio-btn" href="#"></a>高源流、王震邦、<br class="mobile-only"/>孫揚明</h2>
+          <h2><a class="audio-btn" href="#"></a>高源流、<br class="mobile-only"/>王震邦、孫揚明</h2>
           <p>三名台灣《聯合報》記者，八九民運期間先後在北京現場採訪，搭過高喊「解放軍萬歲」的車子入城，看到「打來打去」的複雜真相；</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -941,8 +947,9 @@
       </div>
       <div class="frame frame14 center end" data-template="h">
         <div class="content">
-          <p>你看了這一組由台灣到北京的紀者故事，想要走進其他親歷者的記憶隧道</p>
+          <p>你看了這一組由台灣到北京的紀者故事，<br class="desktop-only"/>想要走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
       </div>
@@ -1002,7 +1009,7 @@
       </div>
 
       <div class="frame frame6" data-template="g">
-        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/cb80e59cba654bfcbaaf5c131cd823b8.mp4" data-video-m="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/3a04cb840f5747dbb144b57703909efc.mp4"></div>
+        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/cb80e59cba654bfcbaaf5c131cd823b8.mp4" data-video-m="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/4e5ce3a3774a414d8f4280abd85f4c81.mp4"></div>
         <a href="#" class="video-btn"><span class="sr-text">Play</span></a>
         <a href="#" class="next-btn">Next</a>
         <a href="#" class="prev-btn">Previous</a>
@@ -1019,7 +1026,7 @@
       </div>
 
       <div class="frame frame8" data-template="g">
-        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/cfbdb5f4a662466a8107b468ed6a7967.mp4" data-video-m="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/9cdc9eac0c644cc3aadead3dc67f15f2.mp4"></div>
+        <div class="video-wrapper fs" data-video="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/3c9e61a9f5c640f0b38c12ddb178a164.mp4" data-video-m="https://initium-asset.s3.amazonaws.com/media/attachment/2019/05/7a82f46e4ca9466797274c64bec4d786.mp4"></div>
         <a href="#" class="video-btn"><span class="sr-text">Play</span></a>
         <a href="#" class="next-btn">Next</a>
         <a href="#" class="prev-btn">Previous</a>
@@ -1037,8 +1044,9 @@
 
       <div class="frame frame10 center end" data-template="h">
         <div class="content">
-          <p>你看到了一個北京學生的反思，想走進其他親歷的記憶隧道</p>
+          <p>你看到了一個北京學生的反思，<br class="desktop-only"/>想走進其他親歷的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
         <p class="remark">

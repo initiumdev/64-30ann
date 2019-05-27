@@ -469,6 +469,7 @@ body.landing-state{
   bottom: 20%;
   height: auto;
   transform: translateY(-50%);
+  padding: 0 25px;
   // p{
   //   transition: opacity .4s 2s ease;
   // }
@@ -485,7 +486,8 @@ body.landing-state{
 }
 .detail-article{
   p{
-    font-size: 18px;
+    font-size: 5vw;
+    line-height: 1.33em;
   }
   .top{
     text-align: left;
@@ -505,7 +507,7 @@ body.landing-state{
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 25px;
     display: none;
     &.active{
       display: block;
@@ -513,7 +515,9 @@ body.landing-state{
   } 
   h2{
     font-size: 30px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
+    line-height: 1.4em;
+    margin-bottom: .5em;
   }
   
 }
@@ -580,6 +584,9 @@ body.landing-state{
   .content{
     position: relative;
     z-index: 11;
+    a{
+      margin-bottom: 1em;
+    }
   }
   .remark{
     position: absolute;
@@ -593,7 +600,7 @@ body.landing-state{
   &.top{
     .content{
       text-align: left;
-      padding-top: 90px;
+      padding-top: 60px;
     }
   }
   &.bottom{
@@ -608,12 +615,12 @@ body.landing-state{
   img{
     pointer-events: none;
   }
-  .audio-btn{
+  a.audio-btn{
     width: 42px;
     height: 40px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: -10px;
+    margin: 0 0 0 -10px;
     background: ~'url(../images/play-icon.png) no-repeat 0 50%/35px auto';
   }
   .video-wrapper video{
