@@ -224,7 +224,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
 
       $(window).on('detail-intro-2', function(){
         //animateParticle
-        pJS.fn.animate(pJS.particles.array[pJS.tmp.active_id], {propname: 'size', to: ((mode == 'l')? 500 : 400), duration: 2000, starttime: new Date().getTime(), eventname: 'detail-article-0' });
+        pJS.fn.animate(pJS.particles.array[pJS.tmp.active_id], {propname: 'size', to: 400, duration: 2000, starttime: new Date().getTime(), eventname: 'detail-article-0' });
 
 
       }).on('float-mode', function(e){
@@ -261,7 +261,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
           pJS.tmp.bg_active = 0;
           pJS.particles.opacity.anim.enable = true;
           var _p = pJS.particles.array[pJS.tmp.active_id];
-          pJS.fn.animate(_p, {propname: 'size', from: (_p.radius), to: ((mode == 'l')?  660: 500), duration: 600, starttime: (new Date().getTime()) });
+          pJS.fn.animate(_p, {propname: 'size', from: (_p.radius), to: 500, duration: 600, starttime: (new Date().getTime()) });
           pJS.fn.animate(_p, {propname: 'opacity', from: (_p.opacity_bubble|| _p.opacity), to: .5, duration: 200, starttime: new Date().getTime() });
         }
         else{
@@ -2294,7 +2294,7 @@ var audioHandler = {
       var c = audioHandler.circles[i];
       // var g = new createjs.Graphics().beginFill(color).drawCircle(centerX, centerY, lastRadius).endFill();
       
-      c.radius = lastRadius * 5;
+      c.radius = lastRadius * 4;
       // console.log(c.radius);
     }
 
