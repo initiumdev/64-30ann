@@ -230,7 +230,7 @@
         <div class="content">
           <p>你剛剛走完這位母親30年以來的道路，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="prev-btn">Previous</a>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
         </div>
         <!-- <div class="swipeup"><span></span></div> -->
@@ -309,7 +309,7 @@
       <div class="frame frame8 center end" data-template="h">
         <div class="content">
           <p>你看到這名學生怎樣成為「馴獸師」，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -467,7 +467,7 @@
       <div class="frame frame16 center end" data-template="h">
         <div class="content">
           <p>你看了這個學者為何畢生研究六四，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -606,7 +606,7 @@
       <div class="frame frame13 center end" data-template="h">
         <div class="content">
           <p>你看了一個由北京逃到海外的故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道：</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -719,7 +719,7 @@
       <div class="frame frame11 center end" data-template="j">
         <div class="content">
           <p>你看到了一名香港學生怎樣支援北京學運，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -796,7 +796,7 @@
       <div class="frame frame8 center end" data-template="h">
         <div class="content">
           <p>你看到一名學生成了老師的變化。<br class="desktop-only"/>想走進其他親歷者的記憶隧道嗎？</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -854,7 +854,7 @@
       <div class="frame frame6 center end" data-template="h">
         <div class="content">
           <p>你看到了一名香港記者如何報導中國的故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
         </div>
       </div>
@@ -963,7 +963,7 @@
       <div class="frame frame14 center end" data-template="h">
         <div class="content">
           <p>你看了這一組由台灣到北京的記者故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -1061,7 +1061,7 @@
       <div class="frame frame10 center end" data-template="h">
         <div class="content">
           <p>你看到了一個北京學生的反思，<br class="desktop-only"/>想走進其他親歷的記憶隧道</p>
-          <a href="#" class="home-btn"><span></span>返回光點主頁</a>
+          <!-- <a href="#" class="home-btn"><span></span>返回光點主頁</a> -->
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>

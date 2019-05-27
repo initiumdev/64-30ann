@@ -329,7 +329,7 @@ var pageHandler = {
       to = to + (_.cur_id+1);
       $('#'+to+' .detail-intro').show().addClass('active'); 
     }
-    _.changePage($('#'+_.pages[_.cur_page]), $('#'+to), true);
+    _.changePage($('#'+_.pages[_.cur_page]), $('#'+to), true, true);
     _.cur_page++;
     setTimeout(function(){
       scrollable1 = true;
@@ -338,7 +338,7 @@ var pageHandler = {
       audioHandler.playBG();
     // }
   },
-  changePage: function($from, $to, ispage){
+  changePage: function($from, $to, ispage, dim){
     var _ = this;
     if(story.$section != null){
       story.$section.removeClass('in');
@@ -348,7 +348,7 @@ var pageHandler = {
       $from.removeClass('active');
       $to.addClass('active');
       if(ispage) $('body').attr('class', _.pages[_.cur_page]+'-state');
-      if(story.$section!=null){story.$section.addClass('in');}
+      if(story.$section!=null && dim){story.$section.addClass('in');}
     });
   }
 };
@@ -369,16 +369,18 @@ var prevFrame = function(){
   changeFrame($current, $frame, false);
 };
 var changeFrame = function($current, $frame, next){
+  var dim = true;
   if($current.find('.video-wrapper').length == 1){
     $current.find('.video-wrapper').html('');  
   }
   if($frame.find('.video-wrapper').length == 1){
+    dim = false;
     var $wrap = $frame.find('.video-wrapper');
     var src = (mode == 'l')? $wrap.data('video'):$wrap.data('video-m');
     $wrap.html('<video width="400" ><source src="'+src+'" type="video/mp4">Your browser does not support HTML5 video.</video>');
     $frame.find('.video-btn').trigger('click');
   }
-  pageHandler.changePage($current, $frame, false);
+  pageHandler.changePage($current, $frame, false, dim);
   var t = $frame.data('template');
   var event = jQuery.Event( "detail-article");
   event.frame = story.frame;
@@ -408,7 +410,7 @@ var nextFrame = function(){
     story.$section = $('#story'+(pageHandler.cur_id+1));
     story.num = story.$section.find('.frame').length;
     var $to = story.$section.find('.detail-article');
-    pageHandler.changePage(story.$section.find('.detail-intro'), $to, false);  
+    pageHandler.changePage(story.$section.find('.detail-intro'), $to, false, true);  
   }
   if(story.frame >= story.num) return;
   
@@ -426,7 +428,7 @@ $('.detail-article .home-btn, #home-btn').bind('click', function(e){
   if(audioHandler.playing){
     $(window).trigger('audioPause');
   }
-  pageHandler.changePage(story.$section, $('#landing2'), true);
+  pageHandler.changePage(story.$section, $('#landing2'), true, true);
   story.$section.find('.detail-article.active, .frame.active').removeClass('active');
   story.frame = -1;
   story.num = 0;
