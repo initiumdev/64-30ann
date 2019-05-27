@@ -185,11 +185,6 @@
       </div>
 
       <div class="frame frame13 center" data-template="a">
-        <a href="#" class="prev-btn">Previous</a>
-        <a href="#" class="next-btn">Next</a>
-        <div class="swipeup"><span></span></div>
-      </div>
-      <div class="frame frame14 center" data-template="d">
         <div class="content">
           <p>我們慢慢找到更多人，在1995年還開始發公開信，要求政府交代真相，當時簽名的只有27人，後來高峰期有190多人，就成了「天安門母親」這個群體，其實裏頭不僅有母親，也有父親，有遇難者的兄弟姊妹和孩子，還有因六四而致殘的人。</p>
           <p>這些年來，我們主要的工作就是整理一份死難者名單，那上頭已有202人了。</p>
@@ -198,8 +193,8 @@
         </div>
         <div class="swipeup"><span></span></div>
       </div>
-
-      <div class="frame frame15 center" data-template="a">
+      
+      <div class="frame frame14 center" data-template="a">
         <div class="content">
           <p>曾經有難屬說，把孩子的骨灰撒了在北海公園的湖裡，以後家人每次去公園，便是去看孩子。</p>
           <a href="#" class="prev-btn">Previous</a>
@@ -208,7 +203,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame16 bottom" data-template="a">
+      <div class="frame frame15 bottom" data-template="a">
         <div class="content">
           <p>但看孩子也是不自由的，這些年，我們被看得越來越緊。兩會、清明、六四，電梯口和樓下都有人，買菜還跟著幫我拉東西，也會監視我們一切通訊工具。今年兩會，境外好像也打不進來了。這麼多年也不能公開悼念，還得乘搭他安排的專車前往墓園。</p>
           <a href="#" class="prev-btn">Previous</a>
@@ -217,7 +212,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame17 bottom" data-template="a">
+      <div class="frame frame16 bottom" data-template="a">
         <div class="content">
           <p>30年過去了，我們年紀大了，56位難屬已經離世，現在還有126名成員。</p>
           <p>我的丈夫、孩子的父親王範地前年底去世了，我今年也82歲了，不希望走的時候，這事情還不解決；萬一還未解決，希望活著的人，繼續堅持，奮鬥一生。</p>
@@ -227,7 +222,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame18 center end" data-template="h">
+      <div class="frame frame17 center end" data-template="h">
         <div class="content">
           <p>你剛剛走完這位母親30年以來的道路，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="prev-btn">Previous</a>
