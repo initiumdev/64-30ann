@@ -119,12 +119,12 @@ function stage2(){
             }
           },
           "opacity": {
-            "value": .8,
+            "value": .75,
             "random": false,
             "anim": {
               "enable": false,
               "speed": .4,
-              "opacity_min": 0.5,
+              "opacity_min": 0.2,
               "sync": false
             }
           },

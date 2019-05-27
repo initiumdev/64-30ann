@@ -76,7 +76,7 @@
       <div class="frame frame1" data-template="f">
         <div class="top content">
           <h2><a class="audio-btn" href="#"></a>張先玲</h2>
-          <p>82歲，6月4日凌晨，她在家裡，不知道兒子王楠已經溜去天安門廣場。</p>
+          <p>82歲，6月4日凌晨，她在家裡，<br class="desktop-only"/>不知道兒子王楠已經溜去天安門廣場。</p>
           <a href="#" class="next-btn">Next</a>
         </div>
         <div class="swipeup"><span></span></div>
