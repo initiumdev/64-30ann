@@ -315,7 +315,7 @@
   <div id="story3" class="section">
     <div class="subpage detail-intro active">
       <div class="content">
-        <p class="first">「實際上也害怕，但是害怕也不能走。因為太多的民眾為了保護天安門廣場上堅持不走的人，付出了生命的代價。」</p>
+        <p class="first">「也害怕，但是害怕也不能走。因為太多的民眾為了保護天安門廣場，保護我們這些堅持不走的人，付出了生命代價。」</p>
       </div>
     </div>
     <div class="subpage detail-article">
@@ -337,7 +337,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame3 center" data-template="a">
+      <div class="frame frame3 bottom" data-template="a">
         <div class="content">
           <p>胡耀邦去世後，我說必須做一個大花圈送去天安門。我是中國政法大學講師，從校門出發，一路呼喊著「耀邦千古、新聞自由、民主萬歲、自由萬歲、法治萬歲」的口號，遊行3個多小時到天安門。這是1989年4月17日，八九民運第一次有組織的遊行。</p>
           <a href="#" class="next-btn">Next</a>
@@ -368,8 +368,8 @@
 
       <div class="frame frame6 bottom" data-template="a">
         <div class="content">
-          <p>6月4日凌晨，天安門廣場氣氛非常恐怖，四周佈滿戒嚴部隊，全副武裝頭戴鋼盔手持槍枝，還有很多裝甲車。廣場上空不斷有發射子彈劃出的彈道，就像節日放禮花一樣。</p>
-          <p>我遇到一個老鄉，說幫我拍張照，我想那可能是我人生最後一張照片，請她一定幫我寄回溫州老家給我母親。至今也沒有收到，我擔心她已經遇難。許多遇難者因照相被射殺，是中國官方最不願意看到有人把屠殺紀錄留下來吧。</p>
+          <p>6月4日凌晨，天安門廣場氣氛非常恐怖，四周佈滿戒嚴部隊，全副武裝，頭戴鋼盔手持槍枝，還有很多裝甲車。廣場上空不斷有發射子彈劃出的彈道，就像節日放禮花一樣。</p>
+          <p>我遇到一個老鄉，說幫我拍張照，我想那可能是我人生最後一張照片，請她一定幫我寄回溫州老家給我母親，至今也沒有收到，我擔心她已經遇難。許多遇難者因照相被射殺，是因為中國官方最不願意看到有人把屠殺紀錄留下來吧。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -396,7 +396,7 @@
 
       <div class="frame frame9 bottom" data-template="a">
         <div class="content">
-          <p>清晨5點半，學生從天安門廣場撤出，走到六部口附近時，三輛坦克從後面追來，發射軍用毒氣彈，一些學生暈倒在地。其中一輛坦克編號106，突然轉彎從背後衝入隊伍，追軋學生。現場有5具遺體看形狀就肯定已經沒救了，其中一具是自行車車把從後背刺進去，從前胸透出來。</p>
+          <p>清晨5點半，學生從天安門廣場撤出，走到六部口附近時，三輛坦克從後面追來，發射軍用毒氣彈，一些學生暈倒在地。其中一輛坦克編號106，突然轉彎從背後衝入隊伍，追軋學生。現場有5具遺體，看形狀就肯定已經沒救了，其中一具是自行車車把從後背刺進去，從前胸透出來。</p>
           <p>我在現場親眼目睹，只是我的隊伍位置靠前，撿回一條命。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -441,7 +441,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame14 center" data-template="a">
+      <div class="frame frame14 bottom" data-template="a">
         <div class="content">
           <p>我無法回溫州了。近年寄居台灣，這是我拍的照片。漫步街頭，車流人流交替，雨絲拂面，讓我彷彿置身於温州。 </p>
           <a href="#" class="next-btn">Next</a>
@@ -452,7 +452,7 @@
 
       <div class="frame frame15 center" data-template="a">
         <div class="content">
-          <p>2012年，我闖關成功，回到溫州，踏進22年沒進過的家門。那是我最後一次回家，待了45天。我本以為我母親對我的事一無所知，她從來不問。她是寡婦，一人養大5個子女。直到有天，她不在家，我在她枕頭邊發現我寫的那兩本書。</p>
+          <p>2012年，我闖關成功，回到溫州，踏進22年沒進過的家門。那是我最後一次回家，待了45天。我本以為我母親對我的事一無所知，她從來不問。她是寡婦，一人養大5個子女。直到有天，她不在家，我在她枕頭邊發現我寫的兩本書。</p>
           <p>其中一本顯然翻得太多，損傷非常嚴重。大概是因為我把前言的最後一段寫給了母親，我說忠孝不能兩全，我是不孝子。你能原諒我這個不孝的兒子嗎？如果有來生，我一定做個孝子，其他都不做，就侍奉我母親。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
@@ -462,7 +462,7 @@
 
       <div class="frame frame16 center" data-template="h">
         <div class="content">
-          <p>你看了這個學者為何畢生研究六四，<br class="desktop-only"/>想要走進其他親歷者的記憶隧道</p>
+          <p>你看了這個學者為何畢生研究六四，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="home-btn"><span></span>返回光點主頁</a>
           <a href="#" target="_blank">閱讀更多</a>
           <a href="#" class="prev-btn">Previous</a>
