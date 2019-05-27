@@ -192,6 +192,7 @@ function stage2(){
         
       };
   $('body').addClass('landing-state');
+  // audioHandler.playBG();
   setTimeout(function(){
 
     $('#particles-js canvas').addClass('hide');
@@ -297,7 +298,8 @@ var pageHandler = {
   prevNextHandler: function(next){
     var _ = this;
     if(story.$section != null && scrollable){
-      if(audioHandler.playing && story.frame>0){
+      if(audioHandler.playing && story.frame>=0){
+        console.log('audio pause');
         $(window).trigger('audioPause');
       }
       if(next){
@@ -332,6 +334,9 @@ var pageHandler = {
     setTimeout(function(){
       scrollable1 = true;
     }, 400);
+    // if(!audioHandler.playingBG){
+      audioHandler.playBG();
+    // }
   },
   changePage: function($from, $to, ispage){
     var _ = this;
@@ -477,14 +482,21 @@ $('.detail-article .video-btn').bind('click', function(e){
   // alert(video.paused);
   console.log('video play');
   if (video.paused) {
+    audioHandler.stopBG();
     video.play();
     video.addEventListener('playing', (event) => {
       $(this).addClass('disabled');
     });
     video.addEventListener('pause', (event) => {
+      audioHandler.playBG();
       $(this).removeClass('disabled');
     });
+    video.addEventListener('ended', (event) => {
+      audioHandler.playBG();
+      $(this).parents('.frame').find('.next-btn').trigger('click');
+    });
   } else {
+    audioHandler.playBG();
     video.pause();
   }
 });

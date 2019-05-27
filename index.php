@@ -1114,8 +1114,8 @@
 <!-- scripts -->
 <script src="<?php echo $base_url;?>js/jquery.min.js"></script>
 <script src="<?php echo $base_url;?>js/hammer.min.js"></script>
-<script src="<?php echo $base_url;?>js/particles.js?t"></script>
-<script src="<?php echo $base_url;?>js/app.js?t"></script>
+<script src="<?php echo $base_url;?>js/particles.js?u"></script>
+<script src="<?php echo $base_url;?>js/app.js?u"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;

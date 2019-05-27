@@ -2143,18 +2143,24 @@ var audioHandler = {
   CIRCLES : 8,
   dataAverage: [42, 42, 42, 42],
   playing: false,
+  playingBG: false,
   init: function(){
 
     // var _ = this;
     
     createjs.Sound.on("fileload", handleLoad, this);
     function handleLoad(e){
-      
+      // if(e.id == 'background-music'){
+
+      //     audioHandler.playBG();
+      // }
     }
     for(var j = 0; j < 9; j++){
       var url = base_url+'audio/'+(j+1)+'.wav';
       audioHandler.load(url, 'story'+(j+1)+'audio', true);
     }
+    audioHandler.load(base_url+'audio/bg.wav', 'background-music', true);
+
     $('.detail-article .audio-btn').bind('click', function(e){
       e.preventDefault();
       if(audioHandler.playing) return;
@@ -2165,50 +2171,62 @@ var audioHandler = {
   load: function(src, id, playnow){
     createjs.Sound.registerSound(src, id);
   },
+  playBG: function(){
+    if(audioHandler.playingBG) return;
+    audioHandler.playingBG = true;
+    // audioHandler.play('background-music', false);
+    createjs.Sound.play('background-music', {volume: 1, loop: -1});
+  },
+  stopBG: function(){
+    if(audioHandler.playingBG){
+      audioHandler.playingBG = false;
+      // audioHandler.stop('background-music', false);  
+      createjs.Sound.stop('background-music');
+    }
+  },
   play: function(id, effect){
     var _ = this;
     var FFTSIZE = 32; 
       // console.log('loaded');
-
+      audioHandler.stopBG();
       createjs.Sound.off("fileload");
-      var context = createjs.Sound.activePlugin.context;
 
-      if(audioHandler.analyserNode !=null){
-        audioHandler.analyserNode.connect(context.destination);
-      }
-      else{
-        // create an analyser node
-        audioHandler.analyserNode = context.createAnalyser();
-        audioHandler.analyserNode.fftSize = FFTSIZE;
-        audioHandler.analyserNode.smoothingTimeConstant = 0.85;
-        audioHandler.analyserNode.connect(context.destination);
-        
-      }
+      if(effect){
+        var context = createjs.Sound.activePlugin.context;
 
-      var dynamicsNode = createjs.Sound.activePlugin.dynamicsCompressorNode;
-      dynamicsNode.disconnect();  // disconnect from destination
-      dynamicsNode.connect(audioHandler.analyserNode);
-      // set up the arrays that we use to retrieve the analyserNode data
-      audioHandler.freqFloatData = new Float32Array(audioHandler.analyserNode.frequencyBinCount);
-      audioHandler.freqByteData = new Uint8Array(audioHandler.analyserNode.frequencyBinCount);
-      audioHandler.timeByteData = new Uint8Array(audioHandler.analyserNode.frequencyBinCount);
+        if(audioHandler.analyserNode !=null){
+          audioHandler.analyserNode.connect(context.destination);
+        }
+        else{
+          // create an analyser node
+          audioHandler.analyserNode = context.createAnalyser();
+          audioHandler.analyserNode.fftSize = FFTSIZE;
+          audioHandler.analyserNode.smoothingTimeConstant = 0.85;
+          audioHandler.analyserNode.connect(context.destination);
+          
+        }
 
-      // calculate the number of array elements that represent each circle
-      audioHandler.circleFreqChunk = audioHandler.analyserNode.frequencyBinCount / audioHandler.CIRCLES;
+        var dynamicsNode = createjs.Sound.activePlugin.dynamicsCompressorNode;
+        dynamicsNode.disconnect();  // disconnect from destination
+        dynamicsNode.connect(audioHandler.analyserNode);
+        // set up the arrays that we use to retrieve the analyserNode data
+        audioHandler.freqFloatData = new Float32Array(audioHandler.analyserNode.frequencyBinCount);
+        audioHandler.freqByteData = new Uint8Array(audioHandler.analyserNode.frequencyBinCount);
+        audioHandler.timeByteData = new Uint8Array(audioHandler.analyserNode.frequencyBinCount);
 
-      if (istouch) {
-        // alert('touch to start');
-        // messageField.text = "Touch to start";
-        // // wrap our sound playing in a click event so we can be played on mobile devices
-        // stage.addEventListener("stagemousedown", startPlayback);
-        // stage.update();   //update the stage to show text
-      } else {
-        // audioHandler.play();
+        // calculate the number of array elements that represent each circle
+        audioHandler.circleFreqChunk = audioHandler.analyserNode.frequencyBinCount / audioHandler.CIRCLES;
+
+        if (istouch) {
+          // messageField.text = "Touch to start";
+          // // wrap our sound playing in a click event so we can be played on mobile devices
+          // stage.addEventListener("stagemousedown", startPlayback);
+          // stage.update();   //update the stage to show text
+        } else {
+          // audioHandler.play();
+        }
       }
       // $(window).trigger('audioloaded');
-      //if(playnow){
-
-      //}
 
     audioHandler.playing = true;
     var instance = createjs.Sound.play(id, {volume: 1});
@@ -2220,12 +2238,16 @@ var audioHandler = {
     instance.addEventListener("complete", function (instance) {
       console.log('complete');
       audioHandler.reset();
+      audioHandler.playBG();
       if(effect){
         $(window).trigger("detail-intro-2");
       }
     });
     $(window).on('audioPause', function(){
-      instance.stop();
+      // instance.stop();
+      createjs.Sound.stop('story'+(pageHandler.cur_id+1)+'audio');
+      audioHandler.playing = false;
+      audioHandler.playBG();
     });
     if(effect){
       audioHandler.tickTimer = setInterval(audioHandler.tick, 20);
