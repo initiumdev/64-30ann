@@ -91,7 +91,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame3 top" data-template="a">
+      <div class="frame frame3 center" data-template="a">
         <div class="content">
           <p>由醫院蓋章的死亡報告單，王楠死於1989年6月3日，診斷為「槍傷在外死亡」。北京公安局發出的屍體火化證明，王楠「屍體業經我局檢驗，經查證系在外死亡」。</p>
           <a href="#" class="prev-btn">Previous</a>
@@ -100,9 +100,9 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame4 center" data-template="e">
+      <div class="frame frame4 top" data-template="a">
         <div class="content">
-          <p>我沒有見到兒子的最後一面。6月14號，接到電話說他可能在護國寺中醫院，我去了，但陪我去的學生不讓我看遺體，怕我難過。他去看了：王楠的膊子開過一個刀，有一個疤痕，還有他穿的衣服鞋子，確定就是他。</p>
+          <p>我沒有見到兒子的最後一面。6月14號，接到電話說他可能在護國寺中醫院，我去了，但陪我去的學生不讓我看遺體，怕我難過。</p>
           <p>醫生告訴我，這屍體頭部有繃帶，最初被埋在天安門廣場前方第28中學的草坪，但開始有味道了，又被挖出來，估計王楠當時在軍訓身穿軍服，被誤以為是軍人，才送到醫院。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
@@ -137,8 +137,9 @@
 
       <div class="frame frame8 bottom" data-template="a">
         <div class="content">
-          <p>兒子當時住在我們對面的一座樓。3號晚上十點多，我看到他房間還亮著燈，想他肯定在家，但第二天清晨6點，我看到他房間燈還是亮的，他肯定出去了。</p>
-          <p>我趕緊過去，看到他留了一張紙條給我「我去找同學，六月三號晚上」。他的床也是沒睡過的樣子。我給學校打電話，問他有沒有到學校去，我找他的同學，問有沒有見過他，同學都說沒見到。我一直很希望他還活著的。</p>
+
+          <p>兒子當時住在我們對面的一座樓。3號晚上10十點多，我看到他房間還亮著燈，想他肯定在家，但第二天清晨6點，我看到他房間燈還是亮的，他肯定出去了。</p>
+          <p>我趕緊過去，看到他留了一張紙條給我「我去找同學，六月三號晚上。」他的床也是沒睡過的樣子。我給學校打電話，問他有沒有到學校去，我找他的同學，問有沒有見過他，同學都說沒見到。我一直很希望他還活著的。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
         </div>
@@ -165,14 +166,15 @@
 
       <div class="frame frame11 center" data-template="d">
         <div class="content">
-          <p>經過半年時間，我就慢慢恢復，應該是說比較理智吧。我就下定決心，要把這個事情搞清楚。為什麼王楠頭上包了繃帶、但不在醫院？為什麼屍體被埋起來了？但是什麼線索都沒有。我只好逢人就說，就像祥林嫂一樣。坐公車也好，買東西也好，任何場合任何地點，就是除了我以外，只要有兩、三個人，我就說這個事情。</p>
+          <p>經過半年時間，我就慢慢恢復，應該是說比較理智吧。我就下定決心，要把這個事情搞清楚。為什麼王楠頭上包了繃帶、但不在醫院？為什麼屍體被埋起來了？但是什麼線索都沒有。</p>
+          <p>我只好逢人就說，就像祥林嫂一樣。坐公車也好，買東西也好，任何場合任何地點，就是除了我以外，只要有兩、三個人，我就說這個事情。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
         </div>
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame12 center" data-template="d">
+      <div class="frame frame12 center" data-template="a">
         <div class="content">
           <p>追尋真相期間，知道很多人遇難，認識了另一個母親丁子霖。政府一直沒有公佈死難者名單，還說是我們家屬覺得不好看不讓他講。我就跟丁子霖一齊商量去尋訪，想要揭穿這個謊言。</p>
           <p>丁是老師，認識很多學生，我也不停去問，去核對，也會有人上門提供線索，但即使知道一個難屬住在哪裏，去尋訪的時候也要很謹慎。</p>
@@ -183,6 +185,11 @@
       </div>
 
       <div class="frame frame13 center" data-template="a">
+        <a href="#" class="prev-btn">Previous</a>
+        <a href="#" class="next-btn">Next</a>
+        <div class="swipeup"><span></span></div>
+      </div>
+      <div class="frame frame14 center" data-template="d">
         <div class="content">
           <p>我們慢慢找到更多人，在1995年還開始發公開信，要求政府交代真相，當時簽名的只有27人，後來高峰期有190多人，就成了「天安門母親」這個群體，其實裏頭不僅有母親，也有父親，有遇難者的兄弟姊妹和孩子，還有因六四而致殘的人。</p>
           <p>這些年來，我們主要的工作就是整理一份死難者名單，那上頭已有202人了。</p>
@@ -192,7 +199,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame14 center" data-template="a">
+      <div class="frame frame15 center" data-template="a">
         <div class="content">
           <p>曾經有難屬說，把孩子的骨灰撒了在北海公園的湖裡，以後家人每次去公園，便是去看孩子。</p>
           <a href="#" class="prev-btn">Previous</a>
@@ -201,7 +208,7 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame15 bottom" data-template="a">
+      <div class="frame frame16 bottom" data-template="a">
         <div class="content">
           <p>但看孩子也是不自由的，這些年，我們被看得越來越緊。兩會、清明、六四，電梯口和樓下都有人，買菜還跟著幫我拉東西，也會監視我們一切通訊工具。今年兩會，境外好像也打不進來了。這麼多年也不能公開悼念，還得乘搭他安排的專車前往墓園。</p>
           <a href="#" class="prev-btn">Previous</a>
@@ -210,17 +217,17 @@
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame16 center" data-template="a">
+      <div class="frame frame17 bottom" data-template="a">
         <div class="content">
           <p>30年過去了，我們年紀大了，56位難屬已經離世，現在還有126名成員。</p>
-          <p>我的丈夫、孩子的父親王範地前年底去世了，我今年也82歲了，我不希望走的時候，這事情還不解決；萬一還未解決，希望活著的人，繼續堅持，奮鬥一生。</p>
+          <p>我的丈夫、孩子的父親王範地前年底去世了，我今年也82歲了，不希望走的時候，這事情還不解決；萬一還未解決，希望活著的人，繼續堅持，奮鬥一生。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
         </div>
         <div class="swipeup"><span></span></div>
       </div>
 
-      <div class="frame frame17 center end" data-template="h">
+      <div class="frame frame18 center end" data-template="h">
         <div class="content">
           <p>你剛剛走完這位母親30年以來的道路，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
           <a href="#" class="prev-btn">Previous</a>

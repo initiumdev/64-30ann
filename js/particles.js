@@ -10,7 +10,7 @@
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
-  const media = [[base_url+"images/1-bg1.jpg", base_url+"images/1-bg2.jpg", base_url+"images/1-bg3.jpg", base_url+"images/1-bg4.jpg", base_url+"images/1-bg5.jpg", base_url+"images/1-bg6.jpg", "", base_url+"images/1-bg8.jpg", base_url+"images/1-bg9.jpg", base_url+"images/1-bg10.jpg", "", "", base_url+"images/1-bg13.jpg?b", base_url+"images/1-bg14.jpg?a", base_url+"images/1-bg15.jpg?a", base_url+"images/1-bg16.jpg?a", base_url+"images/1-bg17.jpg?a"],
+  const media = [[base_url+"images/1-bg1.jpg", base_url+"images/1-bg2.jpg", base_url+"images/1-bg3.jpg", base_url+"images/1-bg4.jpg", base_url+"images/1-bg5.jpg", base_url+"images/1-bg6.jpg", "", base_url+"images/1-bg8.jpg", base_url+"images/1-bg9.jpg", base_url+"images/1-bg10.jpg", "", base_url+"images/1-bg13.jpg?b", base_url+"images/1-bg13.jpg?b", "", base_url+"images/1-bg14.jpg?a", base_url+"images/1-bg15.jpg?a", base_url+"images/1-bg16.jpg?a", base_url+"images/1-bg17.jpg?a"],
 [base_url+"images/2-bg1.jpg", base_url+"images/2-bg2.jpg", "", base_url+"images/2-bg4.jpg", base_url+"images/2-bg5.jpg", base_url+"images/2-bg6.jpg", base_url+"images/2-bg7.jpg"],
 [base_url+"images/3-bg1.jpg?a", base_url+"images/3-bg2.jpg?a", base_url+"images/3-bg3.jpg?a", base_url+"images/3-bg4.jpg?a", "", base_url+"images/3-bg6-2.jpg?a", base_url+"images/3-bg7.jpg", base_url+"images/3-bg8.jpg?a", base_url+"images/3-bg9.jpg?a", base_url+"images/3-bg10.jpg?a", "", base_url+"images/3-bg12.jpg?a", base_url+"images/3-bg13.jpg?a", base_url+"images/3-bg14.jpg?a", "", ""],
 [base_url+"images/4-bg1.jpg", base_url+"images/4-bg2.jpg", base_url+"images/4-bg3.jpg", base_url+"images/4-bg4.jpg", base_url+"images/4-bg5.jpg", "", base_url+"images/4-bg7.jpg", "", "", base_url+"images/4-bg10.jpg", base_url+"images/4-bg11.jpg", "", base_url+"images/4-bg13.jpg"],
@@ -19,7 +19,7 @@ var pJS = function(tag_id, params){
 [base_url+"images/7-bg1.jpg", base_url+"images/7-bg2.jpg", base_url+"images/7-bg3.jpg", base_url+"images/7-bg4.jpg", base_url+"images/7-bg5.jpg", base_url+"images/7-bg6.jpg"],
 [base_url+"images/8-bg1.jpg", base_url+"images/8-bg2.jpg", base_url+"images/8-bg3.jpg", base_url+"images/8-bg4.jpg", base_url+"images/8-bg5.jpg", base_url+"images/8-bg6.jpg", base_url+"images/8-bg7.jpg", base_url+"images/8-bg8.jpg", base_url+"images/8-bg9.jpg", base_url+"images/8-bg10.jpg", base_url+"images/8-bg11.jpg", base_url+"images/8-bg12.jpg", "", base_url+"images/8-bg14.jpg"],
 [base_url+"images/9-bg1.jpg", base_url+"images/9-bg2.jpg", base_url+"images/9-bg3.jpg", "", base_url+"images/9-bg5.jpg", base_url+"images/9-bg6.jpg", "", base_url+"images/9-bg8.jpg", "", base_url+"images/9-bg10.jpg"]];
-const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", base_url+"images/1-bg3-d.jpg", base_url+"images/1-bg4-d.jpg", base_url+"images/1-bg5-d.jpg", "", "", base_url+"images/1-bg8-d.jpg", base_url+"images/1-bg9-d.jpg", base_url+"images/1-bg10-d.jpg", "", "", base_url+"images/1-bg13-d.jpg", base_url+"images/1-bg14-d.jpg", base_url+"images/1-bg15-d.jpg", base_url+"images/1-bg16-d.jpg", base_url+"images/1-bg17-d.jpg"],
+const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", base_url+"images/1-bg3-d.jpg", base_url+"images/1-bg4-d.jpg", base_url+"images/1-bg5-d.jpg", "", "", base_url+"images/1-bg8-d.jpg", base_url+"images/1-bg9-d.jpg", base_url+"images/1-bg10-d.jpg", "", base_url+"images/1-bg13-d.jpg", base_url+"images/1-bg13-d.jpg?b", "", base_url+"images/1-bg14-d.jpg", base_url+"images/1-bg15-d.jpg", base_url+"images/1-bg16-d.jpg", base_url+"images/1-bg17-d.jpg"],
 [base_url+"images/2-bg1-d.jpg", base_url+"images/2-bg2-d.jpg", "", base_url+"images/2-bg4-d.jpg", base_url+"images/2-bg5-d.jpg", base_url+"images/2-bg6-d.jpg", base_url+"images/2-bg7-d.jpg"],
 [base_url+"images/3-bg1-d.jpg?a", base_url+"images/3-bg2-d.jpg?a", base_url+"images/3-bg3-d.jpg?a", base_url+"images/3-bg4-d.jpg?a", "", base_url+"images/3-bg6-d.jpg?a", "", base_url+"images/3-bg8-d.jpg?a", base_url+"images/3-bg9-d.jpg?a", base_url+"images/3-bg10-d.jpg?a", "", base_url+"images/3-bg12-d.jpg?a", base_url+"images/3-bg13-d.jpg?a", base_url+"images/3-bg14-d.jpg?a", "", ""],
 [base_url+"images/4-bg1-d.jpg", base_url+"images/4-bg2-d.jpg", base_url+"images/4-bg3-d.jpg", base_url+"images/4-bg4-d.jpg", base_url+"images/4-bg5-d.jpg", "", base_url+"images/4-bg7-d.jpg", "", "", base_url+"images/4-bg10-d.jpg", base_url+"images/4-bg11-d.jpg", "", base_url+"images/4-bg13-d.jpg"],
@@ -2175,7 +2175,7 @@ var audioHandler = {
     if(audioHandler.playingBG) return;
     audioHandler.playingBG = true;
     // audioHandler.play('background-music', false);
-    createjs.Sound.play('background-music', {volume: 1, loop: -1});
+    createjs.Sound.play('background-music', {volume: .1, loop: -1});
   },
   stopBG: function(){
     if(audioHandler.playingBG){
@@ -2229,7 +2229,7 @@ var audioHandler = {
       // $(window).trigger('audioloaded');
 
     audioHandler.playing = true;
-    var instance = createjs.Sound.play(id, {volume: 1});
+    var instance = createjs.Sound.play(id, {volume: .1});
     if (instance == null || instance.playState == createjs.Sound.PLAY_FAILED) {
       audioHandler.reset();
       return;
