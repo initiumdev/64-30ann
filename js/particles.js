@@ -1200,7 +1200,6 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
           var dx_mouse = _p.x - pJS.interactivity.mouse.click_pos_x,
           dy_mouse = _p.y - pJS.interactivity.mouse.click_pos_y,
           dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse);
-          // console.log('i:'+i+', d: '+dist_mouse);
           if(dist_mouse <= _p.radius && dist_mouse < closest){
             closest = dist_mouse;
             active_id = _p.id;
@@ -1226,7 +1225,6 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
     pJS.tmp.custom_clicking = false;
     pJS.interactivity.events.onclick.enable = false;
     scrollable = false;
-    // console.log("start!!!: "+p.radius+', '+pJS.interactivity.modes.custom.size);
     
     pJS.fn.animate(p,{propname: 'size', from: p.radius, to: 0, duration: 500, starttime: new Date().getTime(), easing: "easeInQuad" });
     pJS.fn.animate(p,{propname: 'x', from: p.x, to: pJS.canvas.w *.5, duration: 500, starttime: new Date().getTime(), easing: "easeInQuad" });
@@ -2236,7 +2234,6 @@ var audioHandler = {
     }
 
     instance.addEventListener("complete", function (instance) {
-      console.log('complete');
       audioHandler.reset();
       audioHandler.playBG();
       if(effect){
@@ -2260,7 +2257,6 @@ var audioHandler = {
     var _ = this;
     _.playing = false;
     if(_.tickTimer!=null){
-      // console.log('complete');
       clearInterval(_.tickTimer);
       _.tickTimer = null;
     }
@@ -2295,7 +2291,6 @@ var audioHandler = {
       // var g = new createjs.Graphics().beginFill(color).drawCircle(centerX, centerY, lastRadius).endFill();
       
       c.radius = ((mode == 'l')? lastRadius * 2 : lastRadius * 3);
-      // console.log(c.radius);
     }
 
   },

@@ -299,7 +299,7 @@ var pageHandler = {
     var _ = this;
     if(story.$section != null && scrollable){
       if(audioHandler.playing && story.frame>=0){
-        console.log('audio pause');
+        // console.log('audio pause');
         $(window).trigger('audioPause');
       }
       if(next){
@@ -357,7 +357,6 @@ pageHandler.init();
 $('body').on('detail-intro', function(e){
   pageHandler.cur_id = e.bubble;
   pageHandler.nextPage();
-  console.log('trigger: '+pageHandler.cur_id);
   
 });
 var prevFrame = function(){
@@ -365,7 +364,6 @@ var prevFrame = function(){
   if(story.frame <0) return;
   var $current = story.$section.find('.frame'+(story.frame+2));
   var $frame = story.$section.find('.frame'+(story.frame+1));
-  console.log('fram frame'+(story.frame+2)+' to frame'+(story.frame+1));
   changeFrame($current, $frame, false);
 };
 var changeFrame = function($current, $frame, next){
@@ -482,7 +480,6 @@ $('.detail-article .video-btn').bind('click', function(e){
   e.preventDefault();
   var video = $(this).parent().find('video').get(0);
   var $wrap = $(this).parent().find('.video-wrapper');
-  console.log('video play');
   if (video.paused) {
     audioHandler.stopBG();
     video.play();
