@@ -667,11 +667,17 @@ a#credits-btn{
     &.loading{
       &:before{
         position: absolute;
-        top: 56%;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
-        content: "loading";
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background: ~'url(../images/loading.svg) no-repeat 50% 50%/100% auto';
+        content: "";
         z-index: 1;
+      }
+      .video-btn{
+        display: none;
       }
     }
     video{
