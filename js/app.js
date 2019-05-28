@@ -481,17 +481,23 @@ $('#grid-btn').bind('click', function(e){
 $('.detail-article .video-btn').bind('click', function(e){
   e.preventDefault();
   var video = $(this).parent().find('video').get(0);
-  // alert(video.paused);
+  var $wrap = $(this).parent().find('.video-wrapper');
   console.log('video play');
   if (video.paused) {
     audioHandler.stopBG();
     video.play();
+    video.addEventListener('waiting', (event) => {
+      
+      $wrap.addClass('loading');
+    });
     video.addEventListener('playing', (event) => {
       $(this).addClass('disabled');
+      $wrap.removeClass('loading');
     });
     video.addEventListener('pause', (event) => {
       audioHandler.playBG();
       $(this).removeClass('disabled');
+      $wrap.removeClass('loading');
     });
     video.addEventListener('ended', (event) => {
       audioHandler.playBG();

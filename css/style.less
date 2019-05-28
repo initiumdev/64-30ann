@@ -663,14 +663,26 @@ a#credits-btn{
     margin: 0 0 0 -10px;
     background: ~'url(../images/play-icon.png) no-repeat 0 50%/35px auto';
   }
-  .video-wrapper video{
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    object-fit: cover;
-    transform: translateX(-50%);
+  .video-wrapper{
+    &.loading{
+      &:before{
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "loading";
+        z-index: 1;
+      }
+    }
+    video{
+      position: fixed;
+      left: 50%;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      object-fit: cover;
+      transform: translateX(-50%);
+    }
   }
   .home-btn{
     display: none;
