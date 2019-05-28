@@ -33,7 +33,8 @@ $lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html
     var base_url = '<?php echo $js_base_url;?>';
   </script>
   <script src="<?php echo $base_url;?>js/modernizr.min.js?a"></script>
-  <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+  <script src="<?php echo $base_url;?>js/soundjs.js"></script>
+  <link href="https://d32kak7w9u5ewj.cloudfront.net/static/bundles/0b9cf7fe9c518887768e6c485764cd12.ico" rel="shortcut icon" data-react-helmet="true">
 </head>
 <body class="intro-state">
 <a href="https://theinitium.com" id="logo" target="_blank">
