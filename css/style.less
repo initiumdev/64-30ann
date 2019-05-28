@@ -13,6 +13,24 @@ textarea,select,input[type="date"],input[type="datetime"],input[type="datetime-l
 .transform(@p){-webkit-transform: @p; -moz-transform: @p; transform: @p;}
 a{text-decoration: none;outline: none;.transition(all 0.25s ease-in-out);&:focus{outline: none;}}
 ul{padding-left: 25px;}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.18); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
 .cf:after {
   clear: both;
   display: block;
