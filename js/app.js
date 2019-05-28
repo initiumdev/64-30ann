@@ -28,7 +28,6 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
 [base_url+"images/7-bg1-d.jpg", "", "", "", "", base_url+"images/7-bg6-d.jpg"],
 [base_url+"images/8-bg1-d.jpg", base_url+"images/8-bg2-d.jpg", base_url+"images/8-bg3-d.jpg", base_url+"images/8-bg4-d.jpg", base_url+"images/8-bg5-d.jpg", base_url+"images/8-bg6-d.jpg", "", base_url+"images/8-bg8-d.jpg", base_url+"images/8-bg9-d.jpg", base_url+"images/8-bg10-d.jpg", base_url+"images/8-bg11-d.jpg", "", "", base_url+"images/8-bg14-d.jpg"],
 [base_url+"images/9-bg1-d.jpg", base_url+"images/9-bg2-d.jpg", base_url+"images/9-bg3-d.jpg", "", base_url+"images/9-bg5-2-d.jpg", "", base_url+"images/9-bg7-d.jpg", "", "", base_url+"images/9-bg10-d.jpg"]];
-
   /* particles.js variables with default values */
   this.pJS = {
     canvas: {
@@ -2727,8 +2726,12 @@ $('.detail-article .home-btn, #home-btn').bind('click', function(e){
   if(audioHandler.playing){
     $(window).trigger('audioPause');
   }
+  var $cur = story.$section.find('.frame'+(story.frame+1));
+  if($cur.find('.video-wrapper').length == 1){
+    $cur.find('.video-wrapper').html('');  
+  }
   pageHandler.changePage(story.$section, $('#landing2'), true, true);
-  story.$section.find('.detail-article.active, .frame.active').removeClass('active');
+  story.$section.find('.detail-article.active, .frame.active').removeClass('active').hide();
   story.frame = -1;
   story.num = 0;
   story.$section = null;
