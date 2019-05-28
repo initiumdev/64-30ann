@@ -394,11 +394,12 @@ var changeFrame = function($current, $frame, next){
   setTimeout(function(){
     scrollable = true;
   }, time);
-  if(event.frame == 1){event.animate = [{propname: 'x', to: '(W*.8)', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H*.9)', duration: 1300, starttime: new Date().getTime() }];}
-  else if(event.frame == 2){event.animate = [{propname: 'x', to: '0+S*.6', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H*.36)', duration: 1300, starttime: new Date().getTime() }];}
-  else if(event.frame == 3){event.animate = [{propname: 'x', to: '0+S*.5', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H-S*.65)', duration: 1300, starttime: new Date().getTime() }];}
-  else if(event.frame == 4){event.animate = [{propname: 'x', to: 'W', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H-S)', duration: 1300, starttime: new Date().getTime() }];}
-  else if(event.frame == 5){event.animate = [{propname: 'x', to: 'W/2', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H/2)', duration: 1300, starttime: new Date().getTime() }];}
+  var n = event.frame % 4;
+  if(n == 1){event.animate = [{propname: 'x', to: '(W*.8)', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H*.9)', duration: 1300, starttime: new Date().getTime() }];}
+  else if(n == 2){event.animate = [{propname: 'x', to: '0+S*.6', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H*.36)', duration: 1300, starttime: new Date().getTime() }];}
+  else if(n == 3){event.animate = [{propname: 'x', to: '0+S*.5', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H-S*.65)', duration: 1300, starttime: new Date().getTime() }];}
+  else if(n == 4){event.animate = [{propname: 'x', to: 'W', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H-S)', duration: 1300, starttime: new Date().getTime() }];}
+  else if(n == 0){event.animate = [{propname: 'x', to: 'W/2', duration: 1300, starttime: new Date().getTime() }, {propname: 'y', to: '(H/2)', duration: 1300, starttime: new Date().getTime() }];}
   else{event.animate = [];}
   $(window).trigger(event);
 };
