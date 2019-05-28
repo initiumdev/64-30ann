@@ -205,7 +205,7 @@ function stage2(){
       $('#bg').addClass('hide');
       // pageHandler.nextPage();
     }, 3000);
-  }, 1210);
+  }, 910);
   
 }
 
