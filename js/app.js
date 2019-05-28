@@ -2669,6 +2669,7 @@ var changeFrame = function($current, $frame, next){
   var dim = true;
   if($current.find('.video-wrapper').length == 1){
     $current.find('.video-wrapper').html('');  
+    audioHandler.playBG();
   }
   if($frame.find('.video-wrapper').length == 1){
     dim = false;
