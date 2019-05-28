@@ -1,8 +1,11 @@
+<?php $share_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
+$lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DEMO</title>
+  <title>六四三十年 | 走進他們的記憶隧道 | 端傳媒</title>
   <meta name="description" content="">
   <meta name="author" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -40,9 +43,9 @@
 <a href="#" id="home-btn" target="_blank"><span class="sr-text">返回光點主頁</span></a>
 <div id="links">
   <a href="#" id="credits-btn">製作團隊</a>
-  <a href="#" target="_blank" id="lang-btn">簡</a>
+  <a href="<?php echo $lang_switch_url;?>" target="_blank" id="lang-btn">簡</a>
   <div id="share">
-    <a href="#" id="fb-btn">
+    <a href="<?php echo $share_url; ?>" id="fb-btn">
       <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
          x="0px" y="0px" width="14.3px" height="30.1px" viewBox="0 0 14.3 30.1" style="enable-background:new 0 0 14.3 30.1;"
@@ -53,7 +56,7 @@
 
       <span class="sr-text">Facebook Share</span>
     </a>
-    <a href="#" id="tt-btn">
+    <a href="<?php echo $share_url; ?>" id="tt-btn">
       <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
          x="0px" y="0px" width="26.8px" height="23.5px" viewBox="0 0 26.8 23.5" style="enable-background:new 0 0 26.8 23.5;"
