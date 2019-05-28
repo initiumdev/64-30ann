@@ -52,7 +52,7 @@ $og_lang = '';
   <a href="#" id="credits-btn">製作團隊</a>
   <a href="<?php echo $lang_switch_url;?>" target="_blank" id="lang-btn">簡</a>
   <div id="share">
-    <a href="<?php echo $share_url; ?>" id="fb-btn">
+    <a href="https://www.facebook.com/sharer.php?u=<?php echo URLencode($share_url); ?>" target="_blank" id="fb-btn">
       <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
          x="0px" y="0px" width="14.3px" height="30.1px" viewBox="0 0 14.3 30.1" style="enable-background:new 0 0 14.3 30.1;"
@@ -63,7 +63,7 @@ $og_lang = '';
 
       <span class="sr-text">Facebook Share</span>
     </a>
-    <a href="<?php echo $share_url; ?>" id="tt-btn">
+    <a href="https://twitter.com/share?url=<?php echo URLencode($share_url); ?>" target="_blank" id="tt-btn">
       <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
          x="0px" y="0px" width="26.8px" height="23.5px" viewBox="0 0 26.8 23.5" style="enable-background:new 0 0 26.8 23.5;"
@@ -173,7 +173,7 @@ $og_lang = '';
       <div class="frame frame8 bottom" data-template="a">
         <div class="content">
 
-          <p>兒子當時住在我們對面的一座樓。3號晚上10十點多，我看到他房間還亮著燈，想他肯定在家，但第二天清晨6點，我看到他房間燈還是亮的，他肯定出去了。</p>
+          <p>兒子當時住在我們對面的一座樓。3號晚上10點多，我看到他房間還亮著燈，想他肯定在家，但第二天清晨6點，我看到他房間燈還是亮的，他肯定出去了。</p>
           <p>我趕緊過去，看到他留了一張紙條給我「我去找同學，六月三號晚上。」他的床也是沒睡過的樣子。我給學校打電話，問他有沒有到學校去，我找他的同學，問有沒有見過他，同學都說沒見到。我一直很希望他還活著的。</p>
           <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="next-btn">Next</a>
@@ -775,7 +775,7 @@ $og_lang = '';
 
       <div class="frame frame2 center" data-template="a">
         <div class="content">
-          <p>5月22日，我考試結果當晚就自己飛到北京，希望支援學運。我去了天安門廣場，參加過遊行。中大學生住在北京飯店的同一個房間，我也會去大學區認識朋友，在他們的宿舍過夜。6月3日晚上，大家都叫我離開，我找了個藉口，回到天安門廣場人民英雄紀念碑，想和學生們在一起。</p>
+          <p>5月22日，我考試結束當晚就自己飛到北京，希望支援學運。我去了天安門廣場，參加過遊行。中大學生住在北京飯店的同一個房間，我也會去大學區認識朋友，在他們的宿舍過夜。6月3日晚上，大家都叫我離開，我找了個藉口，回到天安門廣場人民英雄紀念碑，想和學生們在一起。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
