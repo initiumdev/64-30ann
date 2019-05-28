@@ -1,4 +1,6 @@
-<?php $share_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';?>
+<?php $share_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
+$lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +43,7 @@
 <a href="#" id="home-btn" target="_blank"><span class="sr-text">返回光點主頁</span></a>
 <div id="links">
   <a href="#" id="credits-btn">製作團隊</a>
-  <a href="#" target="_blank" id="lang-btn">簡</a>
+  <a href="<?php echo $lang_switch_url;?>" target="_blank" id="lang-btn">簡</a>
   <div id="share">
     <a href="<?php echo $share_url; ?>" id="fb-btn">
       <svg version="1.1"
