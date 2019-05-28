@@ -1243,6 +1243,13 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
     var event = jQuery.Event( "detail-intro" );
     event.bubble = p.id;
     $( "body" ).trigger( event).removeClass('intro-state');
+    if($('body').data('lang') == 'sc'){
+      media[2][6] = base_url+"images/sc/3-bg7.jpg";
+      media[5][4] = base_url+"images/sc/6-bg5.jpg";
+      media[5][6] = base_url+"images/sc/6-bg7.jpg";
+      media[7][6] = base_url+"images/sc/8-bg7.jpg";
+      media[8][7] = base_url+"images/sc/9-bg8.jpg";
+    }
     if(mode == 'l'){
       pJS.fn.createBgs(media_d[p.id]);
     }

@@ -2,7 +2,7 @@
 $lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sc">
 <head>
   <meta charset="utf-8">
   <title>六四・三十年：走進他們的記憶隧道 ｜ 端傳媒</title>
