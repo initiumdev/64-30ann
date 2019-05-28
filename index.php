@@ -40,7 +40,7 @@
 <a href="#" id="home-btn" target="_blank"><span class="sr-text">返回光點主頁</span></a>
 <div id="links">
   <a href="#" id="credits-btn">製作團隊</a>
-  <a href="#" target="_blank">簡</a>
+  <a href="#" target="_blank" id="lang-btn">簡</a>
   <div id="share">
     <a href="#" id="fb-btn">
       <svg version="1.1"
