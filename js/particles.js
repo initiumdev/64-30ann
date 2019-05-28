@@ -1914,7 +1914,6 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
       for(var i = 0; i<pJS.particles.array.length; i++){
         pJS.fn.animate(pJS.particles.array[i], {propname: 'x', to: 'X-(W*1.6)', easing: "easeOutCubic", duration: ((mode == 'l')? 4000:3000), starttime: new Date().getTime()+60*i});
       }
-      audioHandler.init();
     }
   };
 

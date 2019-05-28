@@ -533,4 +533,5 @@ $(window).load(function(){
   setTimeout(function(){
     $("html, body").animate({ scrollTop: 0 }, 0);
   }, 200);
+  audioHandler.init();
 });
