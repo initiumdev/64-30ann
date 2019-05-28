@@ -1157,8 +1157,7 @@ $lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html
 <!-- scripts -->
 <script src="<?php echo $base_url;?>js/jquery.min.js"></script>
 <script src="<?php echo $base_url;?>js/hammer.min.js"></script>
-<script src="<?php echo $base_url;?>js/particles.js?v"></script>
-<script src="<?php echo $base_url;?>js/app.js?w"></script>
+<script src="<?php echo $base_url;?>js/app.min.js?w"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;
