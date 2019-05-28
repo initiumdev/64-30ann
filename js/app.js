@@ -251,7 +251,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
           pJS.fn.animate(_p, {propname: 'y', to: y[Math.floor(i/3)], duration: 1100, starttime: new Date().getTime(), eventname: 'pauseBubble' });
         }
       }).on('pauseBubble', function(e){
-        
+
         // pJS.particles.move.enable = false;
       }).on('detail-article', function(e){
         //switching bg
