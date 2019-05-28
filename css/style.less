@@ -386,6 +386,12 @@ body{
     // }
   }
 }
+body.landing-state, body.landing2-state{
+  #credits-btn{
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
 body.landing-state{
   #intro{
     &:before{
@@ -402,10 +408,7 @@ body.landing-state{
       opacity: 1;
     }
   }
-  #credits-btn{
-    opacity: 1;
-    pointer-events: auto;
-  }
+  
 }
 #sound{
   img{
@@ -808,7 +811,7 @@ a#credits-btn{
         opacity: .7;
       }
     }
-    &.landing-state{
+    &.landing-state, &.landing2-state{
       #credits-btn{
         opacity: .7;
       }
