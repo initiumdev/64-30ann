@@ -2730,6 +2730,7 @@ $('.detail-article .home-btn, #home-btn').bind('click', function(e){
   if($cur.find('.video-wrapper').length == 1){
     $cur.find('.video-wrapper').html('');  
   }
+  audioHandler.playBG();
   pageHandler.changePage(story.$section, $('#landing2'), true, true);
   story.$section.find('.detail-article.active, .frame.active').removeClass('active').hide();
   story.frame = -1;
