@@ -56,19 +56,8 @@
   </div>
   <div class="swipeup"><span></span></div>
 </div>
-<!-- <div id="landing" class="page center">
-  <div class="content">
-    <p>1989年，他們懷抱希望，與廣場連結。30年一眨眼，物是人非。他們有的身體抱恙，有的永別人世，有的背著記憶匍匐前進，也有人日漸淡忘，開始懷疑堅守的意義。</p>
-    <p>端傳媒走訪世界多地，尋訪9名親歷者，重拾微小且重要的歷史碎片。個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，我們以聲音、影像，留住一片記憶的虛擬場所。</p>
-  </div>
-  <div id="sound" class="page center">
-      <img src="<?php echo $base_url;?>images/sound.png"/>
-      <p>本頁面以被遺忘的聲音作為探索故事、喚回記憶的媒介，請打開喇叭或戴上耳機，聽聽他們的故事</p>
-  </div>
-  <div class="swipeup"><span></span></div>
-</div> -->
 <div id="landing2" class="page">
-  <div id="tips"><span class='icon'></span>點擊光點進入故事</div>
+  <div id="tips"><span class='icon'></span>戴上耳機，<br/>點擊光點進入故事</div>
 </div>
   <div id="story1" class="section">
     <div class="subpage detail-intro">
@@ -870,7 +859,7 @@
       <div class="frame frame1" data-template="f">
         <div class="top content">
           <h2><a class="audio-btn" href="#"></a>高源流、<br class="mobile-only"/>王震邦、孫揚明</h2>
-          <p>三名台灣《聯合報》記者，八九民運期間先後在北京現場採訪，搭過高喊「解放軍萬歲」的車子入城，看到「打來打去」的複雜真相；</p>
+          <p>三名台灣《聯合報》記者，八九民運期間先後在北京現場採訪，有人搭過高喊「解放軍萬歲」的車子入城，有人看到「打來打去」的複雜真相。</p>
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -898,7 +887,7 @@
         <div class="top content">
           <h2><a class="audio-btn" href="#"></a>高源流</h2>
           <p>北京情勢陷入緊張時報社指定我去支援採訪。6月3號深夜，我從首都機場僱車進城。 沿路都是解放軍的車子，軍車、裝甲運兵車，也有坦克。我們看到有些解放軍躺在軍車底盤下。兩個個體戶開車，把手伸出車窗，沿路就喊「解放軍萬歲！」「解放軍萬歲！」。我們問他為什麼要這麼喊，他們說：「這樣比較容易通過」。</p>
-          <p>三名台灣《聯合報》記者，八九民運期間先後在北京現場採訪，有人搭過高喊「解放軍萬歲」的車子入城，有人看到「打來打去」的複雜真相。</p>
+          
           <a href="#" class="next-btn">Next</a>
           <a href="#" class="prev-btn">Previous</a>
         </div>
@@ -1077,51 +1066,53 @@
     <div class="scroll">
       <h2>製作團隊</h2>
       <h3>記者</h3>
-      鄭佩珊<br class="mobile-only"/>
-      楊子琪<br class="mobile-only"/>
-      雷隆<br class="mobile-only"/>
+      鄭佩珊<span class="spacer"></span>
+      楊子琪<span class="spacer"></span>
+      雷隆<span class="spacer"></span>
       <br/><br/>
       <h3>特約記者、攝影</h3>
-      楊平<br class="mobile-only"/>
-      Yuhong Pang<br class="mobile-only"/>
-      姚佳讖<br class="mobile-only"/>
-      Yuhong Pang<br class="mobile-only"/>
-      Dan<br class="mobile-only"/>
+      楊平<span class="spacer"></span>
+      Yuhong Pang<span class="spacer"></span>
+      姚佳讖<span class="spacer"></span>
+      Dan<span class="spacer"></span>
       <br/><br/>
       <h3>實習記者</h3>
-      徐涵<br class="mobile-only"/>
-      郭芷甄<br class="mobile-only"/>
-      余美霞<br class="mobile-only"/>
-      梁敏琪<br class="mobile-only"/>
+      徐涵<span class="spacer"></span>
+      郭芷甄<span class="spacer"></span>
+      余美霞<span class="spacer"></span>
+      梁敏琪<span class="spacer"></span>
       <br/><br/>
       <h3>攝影</h3>
-      林振東<br class="mobile-only"/>
-      Stanley Leung<br class="mobile-only"/>
-      陳焯煇<br class="mobile-only"/>
+      林振東<span class="spacer"></span>
+      Stanley Leung<span class="spacer"></span>
+      陳焯煇<span class="spacer"></span>
       <br/><br/>
       <h3>圖片</h3>
-      Getty Images<br class="mobile-only"/>
-      受訪者、學聯、陳清華、Seuil及Delcourt出版社提供<br class="mobile-only"/>
-      翻拍自《天安門一九八九》<br class="mobile-only"/>
+      Getty Images<span class="spacer"></span>
+      學聯<span class="spacer"></span>
+      陳清華<span class="spacer"></span>
+      Seuil及Delcourt出版社<span class="spacer"></span>
+      《聯合報》<span class="spacer"></span>
+      《天安門一九八九》<span class="spacer"></span>
       <br/><br/>
       <h3>圖片編輯</h3>
-      林振東<br class="mobile-only"/>
+      林振東<span class="spacer"></span>
       <br/><br/>
       <h3>影片製作</h3> 
-      Stanley Leung <br class="mobile-only"/>
+      Stanley Leung <span class="spacer"></span>
       <br/><br/>
       <h3>設計/插畫</h3>
-      端傳媒設計部<br class="mobile-only"/>
+      端傳媒設計部<span class="spacer"></span>
       <br/><br/>
       <h3>網頁</h3>
-      Document On Ready Ltd.<br class="mobile-only"/>
+      Document On Ready Ltd.<span class="spacer"></span>
       <br/><br/>
       <h3>策劃統籌</h3>
-      鄭佩珊<br class="mobile-only"/>
-      陳倩兒<br class="mobile-only"/>
+      鄭佩珊<span class="spacer"></span>
+      陳倩兒<span class="spacer"></span>
       <br/><br/>
       <h3>監製</h3>
-      李志德<br class="mobile-only"/>
+      李志德<span class="spacer"></span>
       <br/><br/>
       註：網頁內文按受訪者訪談及經歷，以第一人稱表述。
 

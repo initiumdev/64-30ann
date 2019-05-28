@@ -129,7 +129,7 @@ function stage2(){
             }
           },
           "size": {
-            "value": ((mode == 'l')? 300 : 200),
+            "value": ((mode == 'l')? 300 : 100),
             "random": true,
             "anim": {
               "enable": true,
