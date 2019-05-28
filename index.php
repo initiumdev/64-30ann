@@ -38,10 +38,34 @@
 </a>
 <a href="#" id="grid-btn"><span class="sr-text">Grid View</span></a>
 <a href="#" id="home-btn" target="_blank"><span class="sr-text">返回光點主頁</span></a>
-<a href="#" id="credits-btn">製作團隊</a>
-<div id="share">
-  <a href="#" id="fb-btn"><span class="sr-text">Facebook Share</span></a>
-  <a href="#" id="tt-btn"><span class="sr-text">Twitter Share</span></a>
+<div id="links">
+  <a href="#" id="credits-btn">製作團隊</a>
+  <a href="#" target="_blank">簡</a>
+  <div id="share">
+    <a href="#" id="fb-btn">
+      <svg version="1.1"
+         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+         x="0px" y="0px" width="14.3px" height="30.1px" viewBox="0 0 14.3 30.1" style="enable-background:new 0 0 14.3 30.1;"
+         xml:space="preserve">
+      <path fill="#bfbfbf" d="M14.3,10.4H9.1V6.6c0-1.2,1.2-1.4,1.8-1.4c0.6,0,3.4,0,3.4,0V0l-3.9,0C5.1,0,3.9,3.8,3.9,6.3v4.1H0v5.3h3.9
+        c0,6.8,0,14.4,0,14.4h5.2c0,0,0-7.6,0-14.4h4.4L14.3,10.4z"/>
+      </svg>
+
+      <span class="sr-text">Facebook Share</span>
+    </a>
+    <a href="#" id="tt-btn">
+      <svg version="1.1"
+         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px" width="26.8px" height="23.5px" viewBox="0 0 26.8 23.5" style="enable-background:new 0 0 26.8 23.5;"
+         xml:space="preserve">
+      <path fill="#bfbfbf" d="M26.8,2.8c-0.5,0.3-1.8,0.8-3.1,0.9c0.8-0.5,2-2,2.3-3.2c-0.8,0.5-2.6,1.3-3.4,1.3c0,0,0,0,0,0
+        c-1-1.1-2.4-1.8-4-1.8c-3.1,0-5.5,2.7-5.5,6c0,0.5,0.1,0.9,0.1,1.3h0c-4.1-0.1-9-2.4-11.7-6.2C-0.2,4.2,1.3,7.7,3.2,9
+        C2.5,9.1,1.3,8.9,0.8,8.3c0,2.1,0.9,4.8,4.3,5.8c-0.7,0.4-1.8,0.3-2.3,0.2c0.2,1.8,2.5,4.1,4.9,4.1c-0.9,1.1-3.9,3.1-7.7,2.5
+        c2.5,1.7,5.5,2.6,8.6,2.6c8.9,0,15.8-7.8,15.5-17.4c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1C24.9,5.3,26,4.2,26.8,2.8z"/>
+      </svg>
+      <span class="sr-text">Twitter Share</span>
+    </a>
+  </div>
 </div>
 <div id="touch-detect"></div>
 <!-- count particles -->
@@ -65,7 +89,7 @@
   <div class="swipeup"><span></span></div>
 </div>
 <div id="landing2" class="page">
-  <div id="tips"><span class='icon'></span>戴上耳機，<br/>點擊光點進入故事</div>
+  <div id="tips"><span class='icon sound-icon'></span>戴上耳機<br/><span class='icon tip-icon'></span>點擊光點進入故事</div>
 </div>
   <div id="story1" class="section">
     <div class="subpage detail-intro">

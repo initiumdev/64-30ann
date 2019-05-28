@@ -402,11 +402,36 @@ body.landing-state{
 //     transition-delay: 1.2s;
 //   }
 // }
-#credits-btn{
+#links{
   position: absolute;
-  opacity: 0;
   z-index: 12;
   font-size: .9em;
+}
+#links{
+  width: 120px;
+  text-align: right;
+  a{
+    float: right;
+    padding: 0 13px;
+    line-height: 31px;
+  }
+}
+#fb-btn{
+  margin-top: 2px;
+  svg{
+    width: 7px;
+  }
+}
+#tt-btn{
+      margin-top: 6px;
+  svg{
+    width: 13px;
+  }
+}
+a#credits-btn{
+  display: block;
+  float: none;
+  opacity: 0;
   pointer-events: none;
 }
 #credits{
@@ -462,6 +487,12 @@ body.landing-state{
     display: inline-block;
     vertical-align: middle;
     margin-right: .4em;
+  }
+  .sound-icon{
+    background: ~'url(../images/sound-on.png) no-repeat 0 50%/100% auto';
+  }
+  .tip-icon{
+    background: ~'url(../images/tips.png) no-repeat 0 0/cover';
   }
 }
 .detail-intro{
@@ -708,6 +739,23 @@ body.landing-state{
   // #credits-btn{
   //   opacity: .7;
   // }
+  #links{
+    bottom: 20px;
+    right: 55px;
+    a{
+      opacity: .7;
+    }
+  }
+  #fb-btn{
+    svg{
+      width: 8px;
+    }
+  }
+  #tt-btn{
+    svg{
+      width: 15px;
+    }
+  }
   body{
     &.landing2-state{
       #grid-btn{
@@ -725,7 +773,7 @@ body.landing-state{
       }
     }
   }
-  #logo, #grid-btn, #home-btn{
+  #logo, #grid-btn, #home-btn, #links a{
     &:hover{
       opacity: 1 !important;
     }
@@ -823,13 +871,14 @@ body.landing-state{
     }
   }
   #tips{
-    bottom: 10%;
+    bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
   }
-  #credits-btn{
+  a#credits-btn{
     bottom: 10%;
     right: 10%;
+    opacity: 0;
     &:hover{
       opacity: 1 !important;
     }
