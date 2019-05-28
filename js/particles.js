@@ -2175,7 +2175,7 @@ var audioHandler = {
     if(audioHandler.playingBG) return;
     audioHandler.playingBG = true;
     // audioHandler.play('background-music', false);
-    createjs.Sound.play('background-music', {volume: .1, loop: -1});
+    createjs.Sound.play('background-music', {volume: 1, loop: -1});
   },
   stopBG: function(){
     if(audioHandler.playingBG){
@@ -2229,7 +2229,7 @@ var audioHandler = {
       // $(window).trigger('audioloaded');
 
     audioHandler.playing = true;
-    var instance = createjs.Sound.play(id, {volume: .1});
+    var instance = createjs.Sound.play(id, {volume: 1});
     if (instance == null || instance.playState == createjs.Sound.PLAY_FAILED) {
       audioHandler.reset();
       return;
