@@ -2867,9 +2867,9 @@ if (typeof document.addEventListener === "undefined" || hidden === undefined) {
   document.addEventListener(visibilityChange, handleVisibilityChange, false);
 }
 $(window).load(function(){
-  $('body').addClass('loaded');
   $('#intro').addClass('active');
   setTimeout(function(){
+    $('body').addClass('loaded');
     $("html, body").animate({ scrollTop: 0 }, 0);
   }, 200);
 });
