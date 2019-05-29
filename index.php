@@ -115,7 +115,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost') {
   <img src="<?php echo $base_url;?>images/2.png" />
   <img src="<?php echo $base_url;?>images/5.png" />
   <img src="<?php echo $base_url;?>images/intro-img4.png" />
-  <img src="<?php echo $base_url;?>images/blur3.png" />
+  <!-- <img src="<?php echo $base_url;?>images/blur3.png" /> -->
 </div>
   <div id="story1" class="section">
     <div class="subpage detail-intro">
