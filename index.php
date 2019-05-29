@@ -884,6 +884,7 @@ $og_lang = '-sc';
       <div class="frame frame6 center end" data-template="h">
         <div class="content">
           <p>你看到了一名香港記者如何報導中國的故事，<br class="desktop-only"/>想走進其他親歷者的記憶隧道</p>
+          <a href="#" class="prev-btn">Previous</a>
           <a href="#" class="home-btn"><span></span><span class="sr-text">返回光點主頁</span></a>
           <!-- <a href="#" target="_blank">閱讀更多</a> -->
         </div>
