@@ -1,13 +1,13 @@
 <?php 
-$share_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
-$lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
-$og_lang = '-sc';
-$body_class = 'data-lang="sc"';
+// $share_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
+// $lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
+// $og_lang = '-sc';
+// $body_class = 'data-lang="sc"';
 
-// $share_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
-// $lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
-// $og_lang = '';
-// $body_class = '';
+$share_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
+$lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
+$og_lang = '';
+$body_class = '';
 
 $base_url = '';
 if(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
@@ -22,7 +22,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost') {
     $base_url = $scheme.$_SERVER['HTTP_HOST'].'/64-30/';
     $js_base_url = $base_url;
 } elseif(strpos($_SERVER['HTTP_HOST'], 'dev') !== FALSE) {
-    $base_url = $scheme.$_SERVER['HTTP_HOST'].'/project/20190529-project-6430/';
+    $base_url = '//project/20190529-project-6430/';
     $js_base_url = $base_url;
 } else {
     $base_url = 'https://theinitium.com/project/20190529-project-6430/';
