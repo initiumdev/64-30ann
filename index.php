@@ -1,36 +1,37 @@
-<?php $share_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
-$lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
+<?php $share_url = 'https://theinitium.com/project/20190529-project-6430/sc.html';
+$lang_switch_url = 'https://theinitium.com/project/20190529-project-6430/tc.html';
 $og_lang = '-sc';
+
+$base_url = '';
+if(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
+  $scheme = 'https://';
+} else {
+  $scheme = 'http://';
+}
+if($_SERVER['HTTP_HOST'] == 'localhost') {
+  $base_url = 'https://theinitium.com/project/20190529-project-6430/';
+  $js_base_url = $base_url;
+  } elseif(strpos($_SERVER['HTTP_HOST'], '192.168.') !== FALSE) {
+    $base_url = $scheme.$_SERVER['HTTP_HOST'].'/64-30/';
+    $js_base_url = $base_url;
+} elseif(strpos($_SERVER['HTTP_HOST'], 'dev') !== FALSE) {
+    $base_url = $scheme.$_SERVER['HTTP_HOST'].'/64-30ann/';
+    $js_base_url = $base_url;
+} else {
+    $base_url = 'https://theinitium.com/project/20190529-project-6430/';
+    $js_base_url = $base_url;
+}
 ?>
 <!DOCTYPE html>
-<html lang="en" class="sc">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>六四・三十年：走進他們的記憶隧道 ｜ 端傳媒</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,shrink-to-fit=no">
   <meta name="description" content="個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，端傳媒走訪多地，尋訪親歷者，以聲音、影像，留住一片記憶的虛擬場所。">
   <meta name="author" content="" />
-  <link rel="stylesheet" media="screen" href="css/style.css?t=<?php echo time();?>">
+  <link rel="stylesheet" media="screen" href="<?php echo $base_url;?>css/style.css?t=<?php echo time();?>">
   <script type="text/javascript">
-    <?php $base_url = '';
-    if(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
-      $scheme = 'https://';
-    } else {
-      $scheme = 'http://';
-    }
-    if($_SERVER['HTTP_HOST'] == 'localhost') {
-      $base_url = 'https://theinitium.com/project/20190529-project-6430/';
-      $js_base_url = $base_url;
-      } elseif(strpos($_SERVER['HTTP_HOST'], '192.168.') !== FALSE) {
-        $base_url = $scheme.$_SERVER['HTTP_HOST'].'/64-30/';
-        $js_base_url = $base_url;
-    } elseif(strpos($_SERVER['HTTP_HOST'], 'dev') !== FALSE) {
-        $base_url = $scheme.$_SERVER['HTTP_HOST'].'/64-30ann/';
-        $js_base_url = $base_url;
-    } else {
-        $base_url = 'https://theinitium.com/project/20190529-project-6430/';
-        $js_base_url = $base_url;
-    }?>
     var base_url = '<?php echo $js_base_url;?>';
   </script>
   <script src="<?php echo $base_url;?>js/modernizr.min.js?a"></script>
