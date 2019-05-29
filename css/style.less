@@ -1040,19 +1040,19 @@ a#credits-btn{
   .video-btn{
     background-size: 70px auto;
   }
-  @keyframes flash {
-    0%   { transform: translateX(100vw); opacity: .8;}
-    // 50%   { transform: translate(0%); }
-    100% { transform: translateX(-2600px); opacity: .9;}
-  }
-  @keyframes drag {
-    0{opacity: 0; transform: translateY(0%) scale(0);}
-    10%   { opacity: 1; transform: translateY(2%) scale(1);}
+  // @keyframes flash {
+  //   0%   { transform: translateX(100vw); opacity: .8;}
+  //   // 50%   { transform: translate(0%); }
+  //   100% { transform: translateX(-2600px); opacity: .9;}
+  // }
+  // @keyframes drag {
+  //   0{opacity: 0; transform: translateY(0%) scale(0);}
+  //   10%   { opacity: 1; transform: translateY(2%) scale(1);}
 
     
-    55% { transform: translateY(-99%)  scale(1); opacity: 1;}
-    65% { transform: translateY(-100%) scale(0); opacity: 0;}
-  }
+  //   55% { transform: translateY(-99%)  scale(1); opacity: 1;}
+  //   65% { transform: translateY(-100%) scale(0); opacity: 0;}
+  // }
   .swipeup{
     span{
       animation: drag 2s ease-in-out infinite forwards;
@@ -1068,7 +1068,9 @@ a#credits-btn{
     }
   }
   #bg{
+    overflow: hidden;
     width: 1300px;
+    transform: translateX(100vw);
   }
   body.landing-state{
     #lang-btn, #fb-btn, #tt-btn{
@@ -1077,8 +1079,7 @@ a#credits-btn{
   }
   body.intro-state.loaded{
     #bg{
-      // animation: flash 4.5s 2s linear infinite forwards;
-      animation: flash 7.4s 2s linear forwards;
+      // animation: flash 7.4s 2s linear forwards;
     }
   }
   // #intro{
