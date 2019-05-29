@@ -34,7 +34,6 @@ $og_lang = '-sc';
     var base_url = '<?php echo $js_base_url;?>';
   </script>
   <script src="<?php echo $base_url;?>js/modernizr.min.js?a"></script>
-  <script src="<?php echo $base_url;?>js/soundjs.js"></script>
   <link href="https://d32kak7w9u5ewj.cloudfront.net/static/bundles/0b9cf7fe9c518887768e6c485764cd12.ico" rel="shortcut icon" data-react-helmet="true">
   <meta property="og:title" content="六四・三十年：走進他們的記憶隧道 ｜ 端傳媒" />
   <meta property="og:type" content="article" />
@@ -1161,10 +1160,17 @@ $og_lang = '-sc';
     </div>
   </div>
 </div>
+<div class="hidden">
+  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img1-2.jpg" />
+  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img2-2.jpg" />
+  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img3.jpg" />
+  <img src="https://theinitium.com/project/20190529-project-6430/images/2.png" />
+  <img src="https://theinitium.com/project/20190529-project-6430/images/5.png" />
+  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img4.jpg" />
+</div>
 <!-- scripts -->
-<script src="<?php echo $base_url;?>js/jquery.min.js"></script>
-<script src="<?php echo $base_url;?>js/hammer.min.js"></script>
-<script src="<?php echo $base_url;?>js/app.js?w"></script>
+<script src="<?php echo $base_url;?>js/plugins.min.js"></script>
+<script src="<?php echo $base_url;?>js/app.min.js?w"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;
