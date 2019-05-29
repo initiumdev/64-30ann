@@ -38,7 +38,7 @@ $og_lang = '-sc';
   <meta property="og:title" content="六四・三十年：走進他們的記憶隧道 ｜ 端傳媒" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="<?php echo $base_url;?>" />
-  <meta property="og:image" content="<?php echo $base_url;?>images/og-share<?php echo $og_lang;?>.jpg" />
+  <meta property="og:image" content="<?php echo $base_url;?>images/og-share-2.jpg" />
   <meta property="og:description" content="個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，端傳媒走訪多地，尋訪親歷者，以聲音、影像，留住一片記憶的虛擬場所。" />
 </head>
 <body class="intro-state" data-lang="sc">
