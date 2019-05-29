@@ -2157,7 +2157,12 @@ var audioHandler = {
     // var _ = this;
     
     createjs.Sound.on("fileload", handleLoad, this);
+    var load = 0;
     function handleLoad(e){
+      load++;
+      if(load == 10){
+        pageHandler.loaded();
+      }
       // if(e.id == 'background-music'){
 
       //     audioHandler.playBG();
@@ -2562,13 +2567,13 @@ var pageHandler = {
       }
       $memoryWrap.append($m);
     }
+    audioHandler.init();
   },
   loaded: function(){
     var _ = this;
     // var $canvas = $('#particles-js canvas');
     
     var duration = 4000;
-    $('#intro').addClass('active');
     setTimeout(function(){
       stage2();
     }, duration); //7800
@@ -2862,9 +2867,8 @@ if (typeof document.addEventListener === "undefined" || hidden === undefined) {
 }
 $(window).load(function(){
   $('body').addClass('loaded');
-  pageHandler.loaded();
+  $('#intro').addClass('active');
   setTimeout(function(){
     $("html, body").animate({ scrollTop: 0 }, 0);
   }, 200);
-  audioHandler.init();
 });
