@@ -2568,7 +2568,7 @@ var pageHandler = {
     //   }
     //   $memoryWrap.append($m);
     // }
-    // audioHandler.init();
+    audioHandler.init();
   },
   loaded: function(){
     var _ = this;
