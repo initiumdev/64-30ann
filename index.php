@@ -91,7 +91,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost') {
 </div> -->
 
 <!-- particles.js container -->
-<div id="bg" class="active"></div>
+<!-- <div id="bg" class="active"></div> -->
 <div id="particles-js"></div>
 <div id="intro" class="page center">
   <div class="content">
@@ -109,12 +109,12 @@ if($_SERVER['HTTP_HOST'] == 'localhost') {
   <div id="tips"><span class='icon sound-icon'></span>戴上耳機<br/><span class='icon tip-icon'></span>點擊光點進入故事</div>
 </div>
 <div class="hidden">
-  <img src="<?php echo $base_url;?>images/intro-img1-2.jpg" />
+  <!-- <img src="<?php echo $base_url;?>images/intro-img1-2.jpg" />
   <img src="<?php echo $base_url;?>images/intro-img2-2.jpg" />
   <img src="<?php echo $base_url;?>images/intro-img3.jpg" />
   <img src="<?php echo $base_url;?>images/2.png" />
   <img src="<?php echo $base_url;?>images/5.png" />
-  <img src="<?php echo $base_url;?>images/intro-img4.png" />
+  <img src="<?php echo $base_url;?>images/intro-img4.png" /> -->
   <!-- <img src="<?php echo $base_url;?>images/blur3.png" /> -->
 </div>
   <div id="story1" class="section">
@@ -1183,7 +1183,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost') {
 
 <!-- scripts -->
 <script src="<?php echo $base_url;?>js/plugins.min.js"></script>
-<script src="<?php echo $base_url;?>js/app.js"></script>
+<script src="<?php echo $base_url;?>js/app.min.js?a"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;
