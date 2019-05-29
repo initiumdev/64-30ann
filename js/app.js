@@ -2869,7 +2869,7 @@ if (typeof document.addEventListener === "undefined" || hidden === undefined) {
 $(window).load(function(){
   $('#intro').addClass('active');
   setTimeout(function(){
-    $('body').addClass('loaded');
     $("html, body").animate({ scrollTop: 0 }, 0);
+    $('body').addClass('loaded');
   }, 200);
 });
