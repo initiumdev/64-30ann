@@ -2169,7 +2169,7 @@ var audioHandler = {
       // }
     }
     for(var j = 0; j < 9; j++){
-      var url = base_url+'audio/'+(j+1)+'.wav';
+      var url = base_url+'audio/'+(j+1)+'.mp3';
       audioHandler.load(url, 'story'+(j+1)+'audio', true);
     }
     audioHandler.load(base_url+'audio/bg.mp3', 'background-music', true);

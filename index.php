@@ -100,6 +100,15 @@ $og_lang = '-sc';
 <div id="landing2" class="page">
   <div id="tips"><span class='icon sound-icon'></span>戴上耳機<br/><span class='icon tip-icon'></span>點擊光點進入故事</div>
 </div>
+<div class="hidden">
+  <img src="<?php echo $base_url;?>images/intro-img1-2.jpg" />
+  <img src="<?php echo $base_url;?>images/intro-img2-2.jpg" />
+  <img src="<?php echo $base_url;?>images/intro-img3.jpg" />
+  <img src="<?php echo $base_url;?>images/2.png" />
+  <img src="<?php echo $base_url;?>images/5.png" />
+  <img src="<?php echo $base_url;?>images/intro-img4.png" />
+  <img src="<?php echo $base_url;?>images/blur3.png" />
+</div>
   <div id="story1" class="section">
     <div class="subpage detail-intro">
       <div class="content">
@@ -1163,14 +1172,7 @@ $og_lang = '-sc';
     </div>
   </div>
 </div>
-<div class="hidden">
-  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img1-2.jpg" />
-  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img2-2.jpg" />
-  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img3.jpg" />
-  <img src="https://theinitium.com/project/20190529-project-6430/images/2.png" />
-  <img src="https://theinitium.com/project/20190529-project-6430/images/5.png" />
-  <img src="https://theinitium.com/project/20190529-project-6430/images/intro-img4.jpg" />
-</div>
+
 <!-- scripts -->
 <script src="<?php echo $base_url;?>js/plugins.min.js"></script>
 <script src="<?php echo $base_url;?>js/app.min.js?t=<?php echo time();?>"></script>
