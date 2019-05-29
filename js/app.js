@@ -2517,7 +2517,7 @@ function stage2(){
     updateParticlesJS(stage2Arr);
     $('#particles-js canvas').removeClass('hide');
     setTimeout(function(){
-      $('#bg').addClass('hide');
+      $('#bg').addClass('hide').fadeOut(200);
       // pageHandler.nextPage();
     }, 3000);
   }, 910);
@@ -2728,7 +2728,7 @@ var pageHandler = {
       }
     }
     else if($('body').hasClass('landing-state')){
-      $('#bg').addClass('hide');
+      $('#bg').addClass('hide').fadeOut(200);
       _.nextPage();
     }
     setTimeout(function(){
