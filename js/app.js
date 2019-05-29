@@ -1918,9 +1918,13 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
     pJS.particles.line_linked.color_rgb_line = hexToRgb(pJS.particles.line_linked.color);
     if(pJS.mode == 'floating'){
       for(var i = 0; i<pJS.particles.array.length; i++){
-        pJS.fn.animate(pJS.particles.array[i], {propname: 'x', to: 'X-(W*1.6)', easing: "easeOutCubic", duration: ((mode == 'l')? 4000:3000), starttime: new Date().getTime()+60*i});
+        if(i == 0){
+          pJS.fn.animate(pJS.particles.array[i], {propname: 'x', to: 'X-(W*1.6)', easing: "easeOutCubic", duration: ((mode == 'l')? 4000:3000), starttime: new Date().getTime()+60*i, eventname: 'stage2-init'});
+        }
+        else{
+          pJS.fn.animate(pJS.particles.array[i], {propname: 'x', to: 'X-(W*1.6)', easing: "easeOutCubic", duration: ((mode == 'l')? 4000:3000), starttime: new Date().getTime()+60*i});
+        }
       }
-      $('body').trigger('stage2-init');
     }
   };
 
@@ -2676,7 +2680,6 @@ var pageHandler = {
           $wrap.removeClass('loading');
         });
         video.addEventListener('pause', (event) => {
-          audioHandler.playBG();
           $(this).removeClass('disabled');
           $wrap.removeClass('loading');
         });
@@ -2773,17 +2776,25 @@ var prevFrame = function(){
   changeFrame($current, $frame, false);
 };
 var changeFrame = function($current, $frame, next){
-  var dim = true;
+  var dim = true, pauseBG = false;
   if($current.find('.video-wrapper').length == 1){
     $current.find('.video-wrapper').html('');  
-    audioHandler.playBG();
+    // audioHandler.playBG();
   }
   if($frame.find('.video-wrapper').length == 1){
     dim = false;
+    pauseBG = true;
     var $wrap = $frame.find('.video-wrapper');
     var src = (mode == 'l')? $wrap.data('video'):$wrap.data('video-m');
     $wrap.html('<video width="400" ><source src="'+src+'" type="video/mp4">Your browser does not support HTML5 video.</video>');
     $frame.find('.video-btn').trigger('click');
+    // audioHandler.stopBG();
+  }
+  if(pauseBG){
+    audioHandler.stopBG();
+  }
+  else{
+    audioHandler.playBG();
   }
   pageHandler.changePage($current, $frame, false, dim);
   var t = $frame.data('template');
