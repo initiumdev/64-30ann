@@ -2152,15 +2152,16 @@ var audioHandler = {
   dataAverage: [42, 42, 42, 42],
   playing: false,
   playingBG: false,
+  load: 0,
   init: function(){
 
     // var _ = this;
     
+    audioHandler.load = 0;
     createjs.Sound.on("fileload", handleLoad, this);
-    var load = 0;
     function handleLoad(e){
-      load++;
-      if(load == 10){
+      audioHandler.load++;
+      if(audioHandler.load == 10){
         pageHandler.loaded();
       }
       // if(e.id == 'background-music'){
