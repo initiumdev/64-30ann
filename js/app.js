@@ -320,7 +320,7 @@ const media_d = [[base_url+"images/1-bg1-d.jpg", base_url+"images/1-bg2-d.jpg", 
             pJS.fn.animate(_p, {propname: 'size', to: pJS.particles.size.value, duration: 600, starttime: new Date().getTime()+(j*30+100) });
           }
         }
-        
+        $('#grid-btn').removeClass('active');
       });
     }
   };
