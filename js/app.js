@@ -2162,7 +2162,7 @@ var audioHandler = {
       var url = base_url+'audio/'+(j+1)+'.wav';
       audioHandler.load(url, 'story'+(j+1)+'audio', true);
     }
-    audioHandler.load(base_url+'audio/bg.wav', 'background-music', true);
+    audioHandler.load(base_url+'audio/bg.mp3', 'background-music', true);
 
     $('.detail-article .audio-btn').bind('click', function(e){
       e.preventDefault();
