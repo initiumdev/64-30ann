@@ -1183,7 +1183,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost') {
 
 <!-- scripts -->
 <script src="<?php echo $base_url;?>js/plugins.min.js"></script>
-<script src="<?php echo $base_url;?>js/app.js?t=<?php echo time();?>"></script>
+<script src="<?php echo $base_url;?>js/app.js"></script>
 <!-- <script src="js/lib/stats.js"></script> -->
 <script>
   /*var count_particles, stats, update;
