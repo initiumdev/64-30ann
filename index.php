@@ -7,9 +7,9 @@ $og_lang = '-sc';
 <head>
   <meta charset="utf-8">
   <title>六四・三十年：走進他們的記憶隧道 ｜ 端傳媒</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,shrink-to-fit=no">
   <meta name="description" content="個人的記憶或許並不全面，卻以無可取代的方式代表著六月四日的廣場。在一切變得模糊之前，端傳媒走訪多地，尋訪親歷者，以聲音、影像，留住一片記憶的虛擬場所。">
   <meta name="author" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css?t=<?php echo time();?>">
   <script type="text/javascript">
     <?php $base_url = '';
