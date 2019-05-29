@@ -2533,11 +2533,11 @@ var pageHandler = {
   cur_id: null,
   init: function(){
     particlesJS('particles-js', stage1Arr);
-    // var multiply = .6;
-    // if($(window).width()<$(window).height()){
-    //   multiply = 0.5;
-    //   mode = 'p';
-    // }
+    var multiply = .6;
+    if($(window).width()<$(window).height()){
+      multiply = 0.5;
+      mode = 'p';
+    }
     // var $memoryWrap = $('#bg'), 
     //   memoryData = [
     //   {src: base_url+"images/intro-img1-2.jpg", width: 807, ratio: 1, top: 59, left: 6.63}, 
@@ -2867,9 +2867,9 @@ if (typeof document.addEventListener === "undefined" || hidden === undefined) {
   document.addEventListener(visibilityChange, handleVisibilityChange, false);
 }
 $(window).load(function(){
-  $('body').addClass('loaded');
   $('#intro').addClass('active');
   setTimeout(function(){
     $("html, body").animate({ scrollTop: 0 }, 0);
+    $('body').addClass('loaded');
   }, 200);
 });
