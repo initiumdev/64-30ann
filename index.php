@@ -1110,6 +1110,7 @@ $og_lang = '-sc';
       鄭佩珊<span class="spacer"></span>
       楊子琪<span class="spacer"></span>
       雷隆<span class="spacer"></span>
+      李志德<span class="spacer"></span>
       <br/><br/>
       <h3>特約記者、攝影</h3>
       楊平<span class="spacer"></span>
@@ -1132,28 +1133,29 @@ $og_lang = '-sc';
       Getty Images<span class="spacer"></span>
       學聯<span class="spacer"></span>
       陳清華<span class="spacer"></span>
+      葉紹麒<span class="spacer"></span>
       Seuil及Delcourt出版社<span class="spacer"></span>
-      《聯合報》<span class="spacer"></span>
       《天安門一九八九》<span class="spacer"></span>
+      《聯合報》<span class="spacer"></span>
       <br/><br/>
       <h3>圖片編輯</h3>
-      林振東<span class="spacer"></span>
+      林振東<br class="mobile-only"/>
       <br/><br/>
       <h3>影片製作</h3> 
-      Stanley Leung <span class="spacer"></span>
+      Stanley Leung<br class="mobile-only"/>
       <br/><br/>
       <h3>設計/插畫</h3>
-      端傳媒設計部<span class="spacer"></span>
+      端傳媒設計部<br class="mobile-only"/>
       <br/><br/>
       <h3>網頁</h3>
-      Document On Ready Ltd.<span class="spacer"></span>
+      Document On Ready Ltd.<br class="mobile-only"/>
       <br/><br/>
       <h3>策劃統籌</h3>
       鄭佩珊<span class="spacer"></span>
       陳倩兒<span class="spacer"></span>
       <br/><br/>
       <h3>監製</h3>
-      李志德<span class="spacer"></span>
+      李志德<br class="mobile-only"/>
       <br/><br/>
       註：網頁內文按受訪者訪談及經歷，以第一人稱表述。
 
